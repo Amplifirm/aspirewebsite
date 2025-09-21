@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { 
   Users,  Award, Building, X, ChevronRight, CheckCircle
 } from 'lucide-react';
@@ -39,7 +38,6 @@ const SpeakersPage = () => {
   const [selectedSpeaker, setSelectedSpeaker] = useState<Speaker | null>(null);
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [user, setUser] = useState<UserType | null>(null);
-  const navigate = useNavigate();
 
   
   useEffect(() => {
@@ -73,44 +71,105 @@ const SpeakersPage = () => {
       image: '/susan.jpg'
     },
     {
-      id: 'paul-centenari',
-      name: 'Paul Centenari',
-      title: 'CEO & Serial Entrepreneur',
-      company: 'Atlas Container',
-      bio: 'CEO of Atlas Container and serial entrepreneur with three successful business exits. Graduate of Dartmouth College and Harvard Business School, bringing insights on scaling businesses and strategic growth.',
-      fullBio: 'Paul Centenari is the CEO of Atlas Container, a Maryland-based company focused on providing the best in container and packaging products. A graduate of Dartmouth College and Harvard Business School, Paul is a proven serial entrepreneur who has started and sold three businesses. His experience spans strategic planning, operational excellence, and building scalable business models that drive sustainable growth.',
-      expertise: ['Entrepreneurship', 'Business Scaling', 'Strategic Planning', 'Exit Strategy'],
-      sessions: ['Keynote: Building & Scaling Successful Businesses'],
+      id: 'jennifer-mazzanti',
+      name: 'Jennifer S. Mazzanti',
+      title: 'Co-Founder & CEO',
+      company: 'eMazzanti Technologies',
+      bio: 'Co-Founder and CEO of eMazzanti Technologies, a Hoboken IT consultancy and MSP recognized for cutting-edge solutions and client-centric innovation. Named a Leader in Digital Technology by NJBIZ in 2024.',
+      fullBio: 'Jennifer S. Mazzanti is the Co-Founder and CEO of eMazzanti Technologies, a Hoboken IT consultancy and MSP recognized for cutting-edge solutions and client-centric innovation. Under her leadership, eMazzanti has grown into a nationally acclaimed firm, recognized for excellence in cybersecurity, cloud services, and digital transformation. A graduate of NYU, Jennifer\'s technical acumen combined with visionary leadership, steering her company to become a trusted advisor for businesses. In 2024, Jennifer was named a Leader in Digital Technology by NJBIZ, recognizing her contributions to innovation and excellence in client and employee service. She is a mentor and advocate for emerging entrepreneurs, sharing insights on scaling businesses, and building resilient teams.',
+      expertise: ['Entrepreneurship', 'Digital Transformation', 'Cybersecurity', 'Business Leadership'],
+      sessions: ['Keynote: Building & Scaling Technology Businesses'],
       achievements: [
-        'CEO of Atlas Container',
-        'Started and sold three businesses',
-        'Harvard Business School graduate',
-        'Dartmouth College alumnus'
+        'Co-Founder and CEO of eMazzanti Technologies',
+        'Named Leader in Digital Technology by NJBIZ (2024)',
+        'NYU Graduate',
+        'Nationally acclaimed IT consultancy leader'
       ],
-      quote: "Every business challenge is an opportunity in disguise—the key is having the vision to see it.",
-      image: '/paulcentenaripic.png'
+      quote: "Innovation isn't just about technology—it's about transforming possibilities into realities for our clients.",
+      image: '/Jennifer Mazzanti 2024_300dpiRGB1.jpg'
     }
   ];
 
   const trackSpeakers: Speaker[] = [
     {
-      id: 'carl-mazzanti',
-      name: 'Carl Mazzanti',
-      title: 'Co-Founder & President',
+      id: 'bryan-antepara',
+      name: 'Bryan Antepara',
+      title: 'Cloud Engineer',
       company: 'eMazzanti Technologies',
-      bio: 'Co-Founder and President of eMazzanti Technologies, Microsoft\'s four time Partner of the Year and premier IT consulting service managing over 400 active accounts.',
-      fullBio: 'Carl Mazzanti is the Co-Founder and President of eMazzanti Technologies, Microsoft\'s four time Partner of the Year and one of the premier IT consulting services for businesses throughout the New York metropolitan area and internationally. He manages over 400 active accounts ranging from professional services firms to high-end global retailers, bringing deep expertise in technology strategy and business growth.',
-      expertise: ['IT Consulting', 'Business Strategy', 'Technology Leadership', 'Microsoft Solutions'],
-      sessions: ['Building Technology Infrastructure for Scale'],
+      bio: 'Seasoned Cloud Engineer with a proven history in the information technology and services industry. He brings deep expertise in Office 365 cloud solutions, business processes, and strong program and project management experience.',
+      fullBio: 'Bryan Antepara is a seasoned Cloud Engineer with a proven history in the information technology and services industry. He brings deep expertise in Office 365 cloud solutions, business processes, Internet Information Services (IIS), Microsoft Office Suite, Exchange Online, SharePoint Online, and Customer Service, backed by strong program and project management experience. His insights help organizations simplify operations, reduce costs, and harness cloud technologies to drive smarter business growth.',
+      expertise: ['Office 365', 'Cloud Solutions', 'Business Processes', 'Project Management'],
+      sessions: [
+        'AI Readiness Assessment',
+        'Reduce your Telephone Operating Costs with Microsoft Teams',
+        'The e365 Advantage: Streamlined Services for Small Business Growth'
+      ],
       track: 'productivity',
       achievements: [
-        'Co-Founded eMazzanti Technologies',
-        'Microsoft Partner of the Year (4x)',
-        'Manages 400+ active client accounts',
-        'Leading IT consultant in NYC metro area'
+        'Expert in Office 365 cloud solutions',
+        'Skilled in business process optimization',
+        'Strong project management background',
+        'Microsoft technologies specialist'
       ],
-      quote: "Technology should amplify your business vision, not complicate it.",
-      image: '/carlmazzanti.jpg'
+      quote: "The cloud isn't just a technology—it's a business transformation platform.",
+      image: '/bryanantepara.jpg'
+    },
+    {
+      id: 'scott-bennett',
+      name: 'Scott Bennett',
+      title: 'Senior Network Engineer',
+      company: 'Information Security Team',
+      bio: 'Senior Network Engineer and a member of the Information Security team, with extensive experience in designing, implementing, and maintaining secure network systems.',
+      fullBio: 'Scott is a Senior Network Engineer and a member of the Information Security team, with extensive experience in designing, implementing, and maintaining secure network systems. He is proficient in a wide range of network security technologies, including firewalls, VPNs, IDS/IPS, and encryption. Scott holds a Bachelor of Science degree in Cybersecurity from a prestigious university recognized by the NSA and the Department of Homeland Security for excellence in cyber education. His expertise equips organizations with the tools and strategies needed to strengthen network defenses and stay ahead of evolving security threats.',
+      expertise: ['Network Engineering', 'Information Security', 'Network Security Tools', 'Cybersecurity'],
+      sessions: ['Advanced Network Security Implementation'],
+      track: 'cybersecurity',
+      achievements: [
+        'Senior Network Engineer',
+        'Information Security Team member',
+        'NSA/DHS recognized cybersecurity degree',
+        'Expert in security tools and technologies'
+      ],
+      quote: "The strongest networks are built with security as the foundation, not an afterthought.",
+      image: '/223ab0c4-c530-4f66-9384-ad520d0da7d1.jpeg'
+    },
+    {
+      id: 'emory-edwards',
+      name: 'Emory Edwards',
+      title: 'Economic Development Advocate',
+      company: 'Hudson County, NJ',
+      bio: 'Champion and advocate for Hudson County, committed to driving economic development and quality of life for Hudson County\'s great business community.',
+      fullBio: 'Emory is a champion and advocate for Hudson County, NJ, committed to driving economic development and quality of life for Hudson County\'s great business community. He is a seasoned leader with expertise in advancement, strategy, and forming community partnerships. Emory brings a collaborative approach to fostering growth and unlocking new opportunities for local businesses.',
+      expertise: ['Economic Development', 'Community Partnerships', 'Strategic Planning', 'Business Advocacy'],
+      sessions: ['Building Strategic Community Partnerships for Business Growth'],
+      track: 'revenue',
+      achievements: [
+        'Hudson County economic development advocate',
+        'Community partnership specialist',
+        'Strategic planning expert',
+        'Business community champion'
+      ],
+      quote: "Economic development happens when business success and community growth align.",
+      image: '/emoryedwards.jpg'
+    },
+    {
+      id: 'george-karaolis',
+      name: 'George Karaolis',
+      title: 'Regional Sales Executive',
+      company: 'i3 International',
+      bio: 'Regional Sales Executive at i3 International, a leader in AI-powered video surveillance and analytics. With over a decade of experience in security technology, helping SMBs turn surveillance systems into strategic tools.',
+      fullBio: 'George Karaolis is a Regional Sales Executive at i3 International, a leader in AI-powered video surveillance and analytics. With over a decade of experience in security technology, George specializes in helping small and medium-sized businesses turn their surveillance systems into strategic tools for safety, loss prevention, and operational efficiency. His insights bridge the gap between physical security and business intelligence, enabling organizations to make smarter, data-driven decisions.',
+      expertise: ['AI-Powered Surveillance', 'Security Technology', 'Sales Strategy', 'Loss Prevention'],
+      sessions: ['Transforming Security Systems into Business Intelligence Tools'],
+      track: 'revenue',
+      achievements: [
+        'Regional Sales Executive at i3 International',
+        'Over a decade in security technology',
+        'AI-powered surveillance specialist',
+        'SMB strategic security expert'
+      ],
+      quote: "Security technology should do more than protect—it should inform and optimize your business.",
+      image: '/georgekaraolispic.jpg'
     },
     {
       id: 'dan-karosen',
@@ -132,68 +191,61 @@ const SpeakersPage = () => {
       image: '/dankarosen.jpg'
     },
     {
-      id: 'scott-williamson',
-      name: 'Scott Williamson',
-      title: 'Director of Managed Services',
-      company: 'WatchGuard Technologies',
-      bio: 'Director of Managed Services at WatchGuard Technologies with expertise in cloud computing, e-commerce, and network security. Passionate about educating SMBs about cybersecurity threats.',
-      fullBio: 'Scott Williamson is the Director of Managed Services at WatchGuard Technologies. He is an expert in cloud computing, e-commerce, and network security with a passion for educating SMBs about cybersecurity threats. His frontline experience protecting thousands of organizations provides valuable insights into the evolving threat landscape and defense strategies.',
-      expertise: ['Cybersecurity', 'Cloud Computing', 'Network Security', 'Threat Education'],
-      sessions: ['What is the Cybersecurity Outlook for 2025/26'],
+      id: 'shiva-kumar',
+      name: 'Shiva Kumar',
+      title: 'Senior Technical Support Engineer',
+      company: 'eMazzanti Technologies',
+      bio: 'Senior Technical Support Engineer at eMazzanti Technologies, where he helps professional services organizations and financial professionals embrace AI and automation to enhance productivity.',
+      fullBio: 'Shiva Kumar is a Senior Technical Support Engineer at eMazzanti Technologies, where he helps professional services organizations and financial professionals embrace AI and automation to enhance productivity and streamline operations. His expertise centers on practical implementation strategies that make emerging technologies accessible and effective for real-world business challenges, empowering teams to work smarter, faster, and more efficiently.',
+      expertise: ['Technical Support', 'AI Implementation', 'Business Automation', 'Productivity Optimization'],
+      sessions: ['AI and Automation for Professional Services'],
+      track: 'productivity',
+      achievements: [
+        'Senior Technical Support Engineer',
+        'AI and automation specialist',
+        'Professional services expert',
+        'Productivity optimization leader'
+      ],
+      quote: "AI isn't about replacing people—it's about empowering them to do their best work.",
+      image: '/Shiva Kumar UN Pic.jpg'
+    },
+    {
+      id: 'john-logan',
+      name: 'John Logan',
+      title: 'Senior Field Engineer & Manager-on-Duty',
+      company: 'eMazzanti Technologies',
+      bio: 'Senior Field Engineer and Manager-on-Duty at eMazzanti Technologies, as well as a member of the Information Security Team. Experienced network engineer with strong foundation in critical thinking.',
+      fullBio: 'John is a Senior Field Engineer and Manager-on-Duty at eMazzanti Technologies, as well as a member of the Information Security Team. He is an experienced network engineer with a strong foundation in critical thinking and problem solving, bringing practical expertise to complex technical challenges. His approach helps organizations strengthen their security posture through hands-on best practices and real-world solutions that enhance system resilience and operational confidence.',
+      expertise: ['Field Engineering', 'Network Engineering', 'Information Security', 'Technical Problem Solving'],
+      sessions: ['Field Engineering Best Practices for Security'],
       track: 'cybersecurity',
       achievements: [
-        'Director at WatchGuard Technologies',
-        'Expert in cloud and network security',
-        'SMB cybersecurity education advocate',
-        'Managed services leadership'
+        'Senior Field Engineer at eMazzanti',
+        'Information Security Team member',
+        'Manager-on-Duty responsibilities',
+        'Expert in critical thinking and problem solving'
       ],
-      quote: "The best cybersecurity strategy is education paired with the right technology.",
-      image: '/scottwilliamsonpic.jpg'
+      quote: "The best solutions come from understanding both the technology and the people who use it.",
+      image: '/johnloganpic.jpg'
     },
     {
-      id: 'bryan-antepara',
-      name: 'Bryan Antepara',
-      title: 'Cloud Engineer',
+      id: 'carl-mazzanti',
+      name: 'Carl Mazzanti',
+      title: 'Co-Founder & President',
       company: 'eMazzanti Technologies',
-      bio: 'Experienced Cloud Engineer with expertise in Office 365 cloud solutions, business processes, and strong program and project management experience.',
-      fullBio: 'Bryan Antepara is an experienced Cloud Engineer with a demonstrated history of working in the information technology and services industry. He is skilled in Office 365 cloud solutions, business processes, Internet Information Services (IIS), Microsoft Office Suite, Exchange Online, SharePoint Online, and Customer Service, possessing strong program and project management experience.',
-      expertise: ['Office 365', 'Cloud Solutions', 'Business Processes', 'Project Management'],
-      sessions: [
-        'AI Readiness Assessment',
-        'Reduce your Telephone Operating Costs with Microsoft Teams',
-        'The e365 Advantage: Streamlined Services for Small Business Growth'
-      ],
+      bio: 'Co-Founder and President of eMazzanti Technologies, Microsoft\'s four time Partner of the Year and premier IT consulting service managing over 400 active accounts.',
+      fullBio: 'Carl Mazzanti is the Co-Founder and President of eMazzanti Technologies, Microsoft\'s four time Partner of the Year and one of the premier IT consulting services for businesses throughout the New York metropolitan area and internationally. He manages over 400 active accounts ranging from professional services firms to high-end global retailers, bringing deep expertise in technology strategy and business growth.',
+      expertise: ['IT Consulting', 'Business Strategy', 'Technology Leadership', 'Microsoft Solutions'],
+      sessions: ['Building Technology Infrastructure for Scale'],
       track: 'productivity',
       achievements: [
-        'Expert in Office 365 cloud solutions',
-        'Skilled in business process optimization',
-        'Strong project management background',
-        'Microsoft technologies specialist'
+        'Co-Founded eMazzanti Technologies',
+        'Microsoft Partner of the Year (4x)',
+        'Manages 400+ active client accounts',
+        'Leading IT consultant in NYC metro area'
       ],
-      quote: "The cloud isn't just a technology—it's a business transformation platform.",
-      image: '/bryanantepara.jpg'
-    },
-    {
-      id: 'deep-ranipa',
-      name: 'Deep Ranipa',
-      title: 'Project Manager & Sr. Technical Solutions Consultant',
-      company: 'Analytics & Engineering Consultant',
-      bio: 'Accomplished Project Manager and Sr. Technical Solutions Consultant with MBA in Analytics from Stevens Institute of Technology and strong background in business strategy.',
-      fullBio: 'Deep Ranipa is an accomplished Project Manager and Sr. Technical Solutions Consultant with a strong background in analytics and mechanical engineering. He holds an MBA in Analytics from Stevens Institute of Technology, providing him with a solid foundation in business strategy, marketing analytics, and project management.',
-      expertise: ['Project Management', 'Analytics', 'Business Strategy', 'Technical Solutions'],
-      sessions: [
-        'Creating an IT Strategy with Microsoft that Works for your Business',
-        'How to Embrace AI without Growing Pains'
-      ],
-      track: 'productivity',
-      achievements: [
-        'MBA in Analytics from Stevens Institute',
-        'Senior Technical Solutions Consultant',
-        'Expert in business strategy',
-        'Project management specialist'
-      ],
-      quote: "The right analytics strategy turns data into competitive advantage.",
-      image: '/deepranipa.jpg'
+      quote: "Technology should amplify your business vision, not complicate it.",
+      image: '/carlmazzanti.jpg'
     },
     {
       id: 'paul-muir',
@@ -215,31 +267,53 @@ const SpeakersPage = () => {
       image: '/paulmuirpic.jpg'
     },
     {
-      id: 'dr-oya-tukel',
-      name: 'Dr. Oya Tukel',
-      title: 'Dean',
-      company: 'Martin Tuchman School of Management, NJIT',
-      bio: 'Dean with over three decades of higher education experience. Two-time Fulbright Specialist, recognized by NJ General Assembly and honored with multiple awards for leadership.',
-      fullBio: 'Dr. Oya Tukel, Dean of the Martin Tuchman School of Management at NJIT, is a leader in tech-focused business education with more than three decades of higher education experience. A two-time Fulbright Specialist, she has been recognized by the New Jersey General Assembly and honored with awards such as Executive Women of New Jersey\'s Salute Award and NJBIZ\'s Leading Women in Business.',
-      expertise: ['Academic Leadership', 'Business Education', 'Technology Management', 'Higher Education'],
-      sessions: ['The Future of Technology-Focused Business Education'],
-      track: 'mixed',
+      id: 'deepanshu-negi',
+      name: 'Deepanshu Negi',
+      title: 'Business Intelligence & Analytics Specialist',
+      company: 'Technology Consultant',
+      bio: 'Passionate about leveraging technology to drive business intelligence and analytics. With experience in IT roles, including as a Business Process Engineer, he has developed a strong foundation in tech stacks.',
+      fullBio: 'Deepanshu is passionate about leveraging technology to drive business intelligence and analytics. With experience in IT roles, including as a Business Process Engineer, and through personal and academic projects, he has developed a strong foundation in tech stacks, finance, programming languages, and industry best practices. His approach helps organizations turn data into actionable insights that support smarter decision-making and operational efficiency.',
+      expertise: ['Business Intelligence', 'Data Analytics', 'Business Process Engineering', 'Technology Strategy'],
+      sessions: ['Business Intelligence for Decision Making'],
+      track: 'productivity',
       achievements: [
-        'Dean at NJIT Martin Tuchman School',
-        'Two-time Fulbright Specialist',
-        'NJ General Assembly recognition',
-        'Multiple leadership awards'
+        'Business Process Engineer background',
+        'Business intelligence specialist',
+        'IT industry expertise',
+        'Technology-driven analytics expert'
       ],
-      quote: "Education is the bridge between where business is today and where it needs to be tomorrow.",
-      image: '/oyatukelpic.jpg'
+      quote: "Data tells stories, but business intelligence turns those stories into action.",
+      image: '/Deepanshu_822392ed-e272-4b17-913c-8d63a160551d.jpeg'
+    },
+    {
+      id: 'deep-ranipa',
+      name: 'Deep Ranipa',
+      title: 'Project Manager & Sr. Technical Solutions Consultant',
+      company: 'Analytics & Engineering Consultant',
+      bio: 'Accomplished Project Manager and Senior Technical Solutions Consultant with a solid foundation in analytics and mechanical engineering. MBA in Analytics from Stevens Institute of Technology.',
+      fullBio: 'Deep Ranipa is an accomplished Project Manager and Senior Technical Solutions Consultant with a solid foundation in analytics and mechanical engineering. He holds an MBA in Analytics from Stevens Institute of Technology, equipping him with expertise in business strategy, marketing analytics, and project management. His unique blend of technical and strategic insight empowers organizations to build scalable IT strategies and adopt AI solutions with confidence and clarity.',
+      expertise: ['Project Management', 'Analytics', 'Business Strategy', 'Technical Solutions'],
+      sessions: [
+        'Creating an IT Strategy with Microsoft that Works for your Business',
+        'How to Embrace AI without Growing Pains'
+      ],
+      track: 'productivity',
+      achievements: [
+        'MBA in Analytics from Stevens Institute',
+        'Senior Technical Solutions Consultant',
+        'Expert in business strategy',
+        'Project management specialist'
+      ],
+      quote: "The right analytics strategy turns data into competitive advantage.",
+      image: '/deepranipa.jpg'
     },
     {
       id: 'nirvan-ramoutar',
       name: 'Nirvan Ramoutar',
       title: 'IT Consultant & Business Development',
       company: 'eMazzanti Technologies / Liqui-Site',
-      bio: 'IT Consultant responsible for Business Development at eMazzanti Technologies and member of Liqui-Site team, a multi-award winning web development and digital marketing firm.',
-      fullBio: 'Nirvan Ramoutar is an IT Consultant responsible for Business Development at eMazzanti Technologies. He is also a member of the Liqui-Site team, a sister company that is a multi award winning web development and digital marketing firm dedicated to the missions of non-profits. His expertise spans IT consulting, business development, and digital marketing strategies.',
+      bio: 'IT Consultant focused on Business Development at eMazzanti Technologies and a member of the Liqui-Site team—a multi-award-winning web development and digital marketing firm.',
+      fullBio: 'Nirvan Ramoutar is an IT Consultant focused on Business Development at eMazzanti Technologies and a member of the Liqui-Site team—a multi-award-winning web development and digital marketing firm dedicated to advancing nonprofit missions. His expertise spans IT consulting, business development, and digital marketing strategies, offering practical solutions that help organizations boost productivity, control costs, and scale with confidence.',
       expertise: ['IT Consulting', 'Business Development', 'Digital Marketing', 'Web Development'],
       sessions: [
         'Do More with Less - How Technology is the Best Anti-Inflation Tool',
@@ -260,8 +334,8 @@ const SpeakersPage = () => {
       name: 'Maria Scarmardo',
       title: 'Owner',
       company: 'Praxis Data Security',
-      bio: 'Owner of Praxis Data Security, providing practical solutions and risk-based Governance, Risk, Compliance (GRC), and Privacy for medium-sized companies.',
-      fullBio: 'Maria is the owner of Praxis Data Security, a firm that provides practical solutions and risk-based Governance, Risk, Compliance (GRC), and Privacy. They help medium-sized companies mitigate losses and position themselves for success in a complex cybersecurity environment.',
+      bio: 'Owner of Praxis Data Security, a firm that provides practical solutions and risk-based Governance, Risk, Compliance (GRC), and Privacy for medium-sized companies.',
+      fullBio: 'Maria is the owner of Praxis Data Security, a firm that provides practical solutions and risk-based Governance, Risk, Compliance (GRC), and Privacy. They help medium-sized companies mitigate losses and position themselves for success in a complex cybersecurity environment. Maria provides actionable strategies for maintaining compliance while controlling costs in today\'s evolving risk landscape.',
       expertise: ['Cybersecurity', 'GRC', 'Data Privacy', 'Risk Management'],
       sessions: ['How to create an effective supplier audit to Keep Your Costs Under control and Within Compliance'],
       track: 'expenses',
@@ -275,50 +349,12 @@ const SpeakersPage = () => {
       image: '/mariascarmardopic.jpg'
     },
     {
-      id: 'scott-bennett',
-      name: 'Scott Bennett',
-      title: 'Senior Network Engineer',
-      company: 'Information Security Team',
-      bio: 'Senior network engineer and information security team member with experience in designing, implementing, and maintaining secure network systems and solutions.',
-      fullBio: 'Scott is a senior network engineer and a member of the information security team. He has experience in designing, implementing, and maintaining secure network systems and solutions. Scott is also proficient in various network security tools and technologies, such as firewalls, VPNs, IDS/IPS, and encryption. He holds a Bachelor of Science degree in Cybersecurity from a prestigious university, which was recognized by the NSA and the Department of Homeland Security for its excellence in cyber education.',
-      expertise: ['Network Engineering', 'Information Security', 'Network Security Tools', 'Cybersecurity'],
-      sessions: ['Advanced Network Security Implementation'],
-      track: 'cybersecurity',
-      achievements: [
-        'Senior Network Engineer',
-        'Information Security Team member',
-        'NSA/DHS recognized cybersecurity degree',
-        'Expert in security tools and technologies'
-      ],
-      quote: "The strongest networks are built with security as the foundation, not an afterthought.",
-      image: '/223ab0c4-c530-4f66-9384-ad520d0da7d1.jpeg'
-    },
-    {
-      id: 'shiva-kumar',
-      name: 'Shiva Kumar',
-      title: 'Senior Technical Support Engineer',
-      company: 'eMazzanti Technologies',
-      bio: 'Senior Technical Support Engineer teaching professional services organizations and financial professionals to embrace AI and automation to improve productivity and operations.',
-      fullBio: 'Shiva Kumar is a Senior Technical Support Engineer at eMazzanti Technologies. Shiva teaches professional services organizations and financial professionals to embrace AI and automation to improve productivity and improve operations. His expertise focuses on practical AI implementation and automation strategies for business efficiency.',
-      expertise: ['Technical Support', 'AI Implementation', 'Business Automation', 'Productivity Optimization'],
-      sessions: ['AI and Automation for Professional Services'],
-      track: 'productivity',
-      achievements: [
-        'Senior Technical Support Engineer',
-        'AI and automation specialist',
-        'Professional services expert',
-        'Productivity optimization leader'
-      ],
-      quote: "AI isn't about replacing people—it's about empowering them to do their best work.",
-      image: '/Shiva Kumar UN Pic.jpg'
-    },
-    {
       id: 'ryan-silvestre',
       name: 'Ryan Silvestre',
       title: 'Senior Business Consultant',
       company: 'NJ Small Business Development Center',
-      bio: 'Senior Business Consultant at NJSBDC specializing in corporate finance and turnaround management, with experience developing outreach programs for Spanish speaking entrepreneurs.',
-      fullBio: 'Ryan is a Senior Business Consultant at the NJ Small Business Development Center (NJSBDC) at New Jersey City University (NJCU) in Hudson County, specializing in corporate finance and turnaround management. He has also assisted in developing and implementing outreach programs for Spanish speaking entrepreneurs.',
+      bio: 'Senior Business Consultant at the NJ Small Business Development Center (NJSBDC) at New Jersey City University (NJCU) in Hudson County, specializing in corporate finance and turnaround management.',
+      fullBio: 'Ryan is a Senior Business Consultant at the NJ Small Business Development Center (NJSBDC) at New Jersey City University (NJCU) in Hudson County, specializing in corporate finance and turnaround management. He has also assisted in developing and implementing outreach programs for Spanish speaking entrepreneurs. Ryan\'s expertise equips small businesses with the financial strategies and operational insights needed to navigate challenges, stabilize performance, and position for long-term success.',
       expertise: ['Corporate Finance', 'Turnaround Management', 'Small Business Development', 'Bilingual Business Services'],
       sessions: ['Financial Turnaround Strategies for Small Businesses'],
       track: 'revenue',
@@ -332,88 +368,31 @@ const SpeakersPage = () => {
       image: '/ryansilvestrepic.jpg'
     },
     {
-      id: 'john-logan',
-      name: 'John Logan',
-      title: 'Senior Field Engineer & Manager-on-Duty',
-      company: 'eMazzanti Technologies',
-      bio: 'Senior Field Engineer and Manager-on-Duty at eMazzanti Technologies, member of the Information Security Team with strong foundation in critical thinking and problem solving.',
-      fullBio: 'John is a Senior Field Engineer and Manager-on-Duty at eMazzanti Technologies and a member of the Information Security Team. He is an experienced network engineer with a strong foundation in critical thinking and problem solving, bringing practical expertise to complex technical challenges.',
-      expertise: ['Field Engineering', 'Network Engineering', 'Information Security', 'Technical Problem Solving'],
-      sessions: ['Field Engineering Best Practices for Security'],
-      track: 'cybersecurity',
+      id: 'dr-oya-tukel',
+      name: 'Dr. Oya Tukel',
+      title: 'Dean',
+      company: 'Martin Tuchman School of Management, NJIT',
+      bio: 'Dean of the Martin Tuchman School of Management at NJIT, a leader in tech-focused business education with more than three decades of higher education experience.',
+      fullBio: 'Dr. Oya Tukel, Dean of the Martin Tuchman School of Management at NJIT, is a leader in tech-focused business education with more than three decades of higher education experience. A two-time Fulbright Specialist, she has been recognized by the New Jersey General Assembly and honored with awards such as Executive Women of New Jersey\'s Salute Award and NJBIZ\'s Leading Women in Business. Her expertise offers a forward-looking perspective on how technology is reshaping business education and preparing the next generation of leaders.',
+      expertise: ['Academic Leadership', 'Business Education', 'Technology Management', 'Higher Education'],
+      sessions: ['The Future of Technology-Focused Business Education'],
+      track: 'mixed',
       achievements: [
-        'Senior Field Engineer at eMazzanti',
-        'Information Security Team member',
-        'Manager-on-Duty responsibilities',
-        'Expert in critical thinking and problem solving'
+        'Dean at NJIT Martin Tuchman School',
+        'Two-time Fulbright Specialist',
+        'NJ General Assembly recognition',
+        'Multiple leadership awards'
       ],
-      quote: "The best solutions come from understanding both the technology and the people who use it.",
-      image: '/johnloganpic.jpg'
-    },
-    {
-      id: 'george-karaolis',
-      name: 'George Karaolis',
-      title: 'Regional Sales Executive',
-      company: 'i3 International',
-      bio: 'Regional Sales Executive at i3 International specializing in AI-powered video surveillance and analytics, helping SMBs turn surveillance systems into strategic business tools.',
-      fullBio: 'George Karaolis is a Regional Sales Executive at i3 International, a leader in AI-powered video surveillance and analytics. With over a decade of experience in security technology, George specializes in helping small and medium-sized businesses turn their surveillance systems into strategic tools for safety, loss prevention, and operational efficiency.',
-      expertise: ['AI-Powered Surveillance', 'Security Technology', 'Sales Strategy', 'Loss Prevention'],
-      sessions: ['Transforming Security Systems into Business Intelligence Tools'],
-      track: 'revenue',
-      achievements: [
-        'Regional Sales Executive at i3 International',
-        'Over a decade in security technology',
-        'AI-powered surveillance specialist',
-        'SMB strategic security expert'
-      ],
-      quote: "Security technology should do more than protect—it should inform and optimize your business.",
-      image: '/georgekaraolispic.jpg'
-    },
-    {
-      id: 'emory-edwards',
-      name: 'Emory Edwards',
-      title: 'Economic Development Advocate',
-      company: 'Hudson County, NJ',
-      bio: 'Champion and advocate for Hudson County, committed to driving economic development and quality of life for the business community with expertise in advancement and strategy.',
-      fullBio: 'Emory is a champion and advocate for Hudson County, NJ, committed to driving economic development and quality of life for Hudson County\'s great business community. He is a seasoned leader with expertise in advancement, strategy, and forming community partnerships.',
-      expertise: ['Economic Development', 'Community Partnerships', 'Strategic Planning', 'Business Advocacy'],
-      sessions: ['Building Strategic Community Partnerships for Business Growth'],
-      track: 'revenue',
-      achievements: [
-        'Hudson County economic development advocate',
-        'Community partnership specialist',
-        'Strategic planning expert',
-        'Business community champion'
-      ],
-      quote: "Economic development happens when business success and community growth align.",
-      image: '/emoryedwards.jpg'
-    },
-    {
-      id: 'deepanshu-negi',
-      name: 'Deepanshu Negi',
-      title: 'Business Intelligence & Analytics Specialist',
-      company: 'Technology Consultant',
-      bio: 'Passionate about leveraging technology to drive business intelligence and analytics, with foundational understanding of IT industry tech stack, finance, and best practices.',
-      fullBio: 'Deepanshu is passionate about leveraging technology to drive business intelligence and analytics. With a background working in IT roles, including as a Business Process Engineer, and through the development of personal and academic projects, he has gained a foundational understanding of the tech stack, finance, languages, and best practices that are widely utilized in the IT industry.',
-      expertise: ['Business Intelligence', 'Data Analytics', 'Business Process Engineering', 'Technology Strategy'],
-      sessions: ['Business Intelligence for Decision Making'],
-      track: 'productivity',
-      achievements: [
-        'Business Process Engineer background',
-        'Business intelligence specialist',
-        'IT industry expertise',
-        'Technology-driven analytics expert'
-      ],
-      quote: "Data tells stories, but business intelligence turns those stories into action.",
-      image: '/deepanshunegi.jpg'
+      quote: "Education is the bridge between where business is today and where it needs to be tomorrow.",
+      image: '/oyatukelpic.jpg'
     },
     {
       id: 'brinda-vani',
       name: 'Brinda Vani',
       title: 'Field Network Engineer',
       company: 'Network Security Specialist',
-      bio: 'Field Network Engineer with Master\'s in Computer Science from Pace University, specializing in network security, cloud infrastructure, and advanced email security protocols.',
-      fullBio: 'Brinda is a Field Network Engineer with a Master\'s in Computer Science from Pace University. She specializes in network security and cloud infrastructure, with deep expertise in WatchGuard Cloud, Active Directory, and implementing advanced email security protocols like DMARC and DKIM.',
+      bio: 'Field Network Engineer with a Master\'s in Computer Science from Pace University. She specializes in network security and cloud infrastructure, with deep expertise in WatchGuard Cloud.',
+      fullBio: 'Brinda is a Field Network Engineer with a Master\'s in Computer Science from Pace University. She specializes in network security and cloud infrastructure, with deep expertise in WatchGuard Cloud, Active Directory, and advanced email security protocols such as DMARC and DKIM. Her work empowers organizations to strengthen their digital defenses and build resilient, secure environments through practical, scalable solutions.',
       expertise: ['Network Engineering', 'Cloud Infrastructure', 'Email Security', 'WatchGuard Technologies'],
       sessions: ['Advanced Email Security and Cloud Infrastructure'],
       track: 'cybersecurity',
@@ -425,6 +404,25 @@ const SpeakersPage = () => {
       ],
       quote: "Network security is like a chain—it's only as strong as its most thoughtfully designed link.",
       image: '/brindavani.jpg'
+    },
+    {
+      id: 'scott-williamson',
+      name: 'Scott Williamson',
+      title: 'Director of Managed Services',
+      company: 'WatchGuard Technologies',
+      bio: 'Director of Managed Services at WatchGuard Technologies with expertise in cloud computing, e-commerce, and network security. Passionate about educating SMBs about cybersecurity threats.',
+      fullBio: 'Scott Williamson is the Director of Managed Services at WatchGuard Technologies. He is an expert in cloud computing, e-commerce, and network security with a passion for educating SMBs about cybersecurity threats. His frontline experience protecting thousands of organizations provides valuable insights into the evolving threat landscape and defense strategies.',
+      expertise: ['Cybersecurity', 'Cloud Computing', 'Network Security', 'Threat Education'],
+      sessions: ['What is the Cybersecurity Outlook for 2025/26'],
+      track: 'cybersecurity',
+      achievements: [
+        'Director at WatchGuard Technologies',
+        'Expert in cloud and network security',
+        'SMB cybersecurity education advocate',
+        'Managed services leadership'
+      ],
+      quote: "The best cybersecurity strategy is education paired with the right technology.",
+      image: '/scottwilliamsonpic.jpg'
     }
   ];
 
@@ -443,6 +441,11 @@ const SpeakersPage = () => {
     if (selectedCategory === 'all') return allSpeakers;
     if (selectedCategory === 'keynote') return keynoteSpeeakers;
     return trackSpeakers.filter(speaker => speaker.track === selectedCategory || speaker.track === 'mixed');
+  };
+
+  const handleNavigation = (path: string) => {
+    // Mock navigation function - in real app would use router
+    alert(`Would navigate to: ${path}`);
   };
 
   return (
@@ -620,13 +623,13 @@ const SpeakersPage = () => {
             {user ? (
               <>
                 <button
-                  onClick={() => navigate('/dashboard')}
+                  onClick={() => handleNavigation('/dashboard')}
                   className="px-8 py-3 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-all duration-200 font-medium shadow-md"
                 >
                   View My Schedule
                 </button>
                 <button
-                  onClick={() => navigate('/agenda')}
+                  onClick={() => handleNavigation('/agenda')}
                   className="px-8 py-3 border-2 border-gray-300 text-gray-700 rounded-xl hover:border-gray-400 hover:bg-gray-50 transition-all duration-200 font-medium"
                 >
                   View Full Agenda
@@ -635,13 +638,13 @@ const SpeakersPage = () => {
             ) : (
               <>
                 <button
-                  onClick={() => navigate('/register')}
+                  onClick={() => handleNavigation('/register')}
                   className="px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl hover:from-blue-700 hover:to-purple-700 transition-all duration-200 font-medium shadow-md"
                 >
                   Register for Conference
                 </button>
                 <button
-                  onClick={() => navigate('/agenda')}
+                  onClick={() => handleNavigation('/agenda')}
                   className="px-8 py-3 border-2 border-gray-300 text-gray-700 rounded-xl hover:border-gray-400 hover:bg-gray-50 transition-all duration-200 font-medium"
                 >
                   View Full Agenda
@@ -734,7 +737,7 @@ const SpeakersPage = () => {
               <button 
                 onClick={() => {
                   setSelectedSpeaker(null);
-                  navigate('/agenda');
+                  handleNavigation('/agenda');
                 }}
                 className="flex-1 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium rounded-2xl shadow-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300"
               >
@@ -751,56 +754,7 @@ const SpeakersPage = () => {
         </div>
       )}
 
-      {/* Footer */}
-      <footer className="py-16 px-6 bg-gray-900 text-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <h3 className="text-2xl font-light mb-4">ASPIRE 2025</h3>
-              <p className="text-gray-400">
-                Transforming businesses through technology innovation. Presented by eMazzanti Technologies.
-              </p>
-            </div>
-            
-            <div>
-              <h4 className="font-medium mb-4">Contact</h4>
-              <div className="space-y-2 text-gray-400">
-                <p>aspire@emazzanti.net</p>
-                <p>+1 (844) 360-4400</p>
-                <p>New York, NY</p>
-              </div>
-            </div>
-            
-            <div>
-              <h4 className="font-medium mb-4">Quick Links</h4>
-              <div className="space-y-2">
-                {['Home', 'Tracks', 'Agenda', 'Venue'].map((link) => (
-                  <p key={link}>
-                    <button className="text-gray-400 hover:text-white transition-colors">
-                      {link}
-                    </button>
-                  </p>
-                ))}
-              </div>
-            </div>
-            
-            <div>
-              <h4 className="font-medium mb-4">Follow Us</h4>
-              <div className="flex space-x-3">
-                {['LinkedIn', 'Twitter'].map((social) => (
-                  <button key={social} className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors">
-                    <span className="text-sm">{social[0]}</span>
-                  </button>
-                ))}
-              </div>
-            </div>
-          </div>
-          
-          <div className="pt-8 border-t border-gray-800 text-center text-gray-400">
-            <p>&copy; 2025 eMazzanti Technologies. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+      
 
       <style>
         {`

@@ -664,56 +664,7 @@ const TracksPage = () => {
         </div>
       )}
 
-      {/* Footer */}
-      <footer className="py-16 px-6 bg-gray-900 text-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <h3 className="text-2xl font-light mb-4">ASPIRE 2025</h3>
-              <p className="text-gray-400">
-                Transforming businesses through technology innovation. Presented by eMazzanti Technologies.
-              </p>
-            </div>
-            
-            <div>
-              <h4 className="font-medium mb-4">Contact</h4>
-              <div className="space-y-2 text-gray-400">
-                <p>aspire@emazzanti.net</p>
-                <p>+1 (844) 360-4400</p>
-                <p>New York, NY</p>
-              </div>
-            </div>
-            
-            <div>
-              <h4 className="font-medium mb-4">Quick Links</h4>
-              <div className="space-y-2">
-                {['Home', 'Agenda', 'Speakers', 'Venue'].map((link) => (
-                  <p key={link}>
-                    <button className="text-gray-400 hover:text-white transition-colors">
-                      {link}
-                    </button>
-                  </p>
-                ))}
-              </div>
-            </div>
-            
-            <div>
-              <h4 className="font-medium mb-4">Follow Us</h4>
-              <div className="flex space-x-3">
-                {['LinkedIn', 'Twitter'].map((social) => (
-                  <button key={social} className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors">
-                    <span className="text-sm">{social[0]}</span>
-                  </button>
-                ))}
-              </div>
-            </div>
-          </div>
-          
-          <div className="pt-8 border-t border-gray-800 text-center text-gray-400">
-            <p>&copy; 2025 eMazzanti Technologies. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+      
 
       <style>
         {`

@@ -1,20 +1,26 @@
-
 import { 
-  Phone, Mail, MapPin, Linkedin,  Youtube,
- Calendar, Users,  ArrowRight, 
- Star, CheckCircle, Globe
+  Phone, Mail, MapPin, Linkedin, Youtube,
+  Calendar, Users, ArrowRight, 
+  Star, CheckCircle, Globe
 } from 'lucide-react';
 
 const ProfessionalFooter = () => {
 
-
-  
+  const handleNavigation = (path: string) => {
+    window.location.href = path;
+  };
 
   return (
     <footer className="relative overflow-hidden">
       {/* Video Section - White Background */}
       <div className="bg-white">
         <div className="max-w-7xl mx-auto px-8 py-24">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-light text-gray-900 mb-8 font-roboto">
+              Historical Conference Highlights
+            </h2>
+          </div>
+          
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             
             {/* Left Content */}
@@ -34,16 +40,29 @@ const ProfessionalFooter = () => {
                 </h3>
                 
                 <p className="text-xl text-gray-700 leading-relaxed">
-                  Witness the transformative moments from ASPIRE 2024 where 400+ business leaders 
-                  discovered breakthrough strategies. Experience the energy, insights, and connections 
-                  that drive real business transformation.
+                  In 2024, the conference was named 23 Years of Learning. It has now been rebranded as 
+                  <strong> ASPIRE 2025</strong> with the same commitment to SMB leaders.
+                </p>
+                
+                <p className="text-xl text-gray-700 leading-relaxed">
+                  Learn here, gain actionable insights now, put them to use tomorrow.
                 </p>
               </div>
-              
-             
             </div>
 
-            
+            {/* Right - Video */}
+            <div className="relative">
+              <div className="aspect-video bg-gray-900 rounded-3xl overflow-hidden shadow-2xl">
+                <iframe 
+                  src="https://www.youtube.com/embed/4lrA4owaTKE"
+                  title="ASPIRE 2025 Conference Highlights"
+                  className="w-full h-full"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -70,11 +89,15 @@ const ProfessionalFooter = () => {
               </div>
               
               <p className="text-gray-300 leading-relaxed">
-                eMazzanti Technologies' flagship conference bringing together 400+ SMB leaders 
-                for actionable insights and breakthrough innovation.
+                eMazzanti's Annual Learning Conference brings together 150+ SMB leaders 
+                where actionable insights on enhancing business performance through 
+                technology are delivered.
               </p>
 
-              <button className="group inline-flex items-center space-x-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-2xl font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-blue-500/25 transform hover:scale-105">
+              <button 
+                onClick={() => handleNavigation('/register')}
+                className="group inline-flex items-center space-x-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-2xl font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-blue-500/25 transform hover:scale-105"
+              >
                 <span>Register Now</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
@@ -89,8 +112,7 @@ const ProfessionalFooter = () => {
                     <Calendar className="w-6 h-6 text-blue-400 mt-0.5" />
                     <div>
                       <div className="text-white font-medium">October 15, 2025</div>
-                      <div className="text-gray-300 text-sm">9:00 AM - 7:30 PM EST</div>
-                      <div className="text-gray-400 text-xs mt-1">Full day + networking reception</div>
+                      <div className="text-gray-300 text-sm">9:00AM - 5:00PM EST</div>
                     </div>
                   </div>
                 </div>
@@ -100,7 +122,7 @@ const ProfessionalFooter = () => {
                     <MapPin className="w-6 h-6 text-purple-400 mt-0.5" />
                     <div>
                       <div className="text-white font-medium">Microsoft Technology Center</div>
-                      <div className="text-gray-300 text-sm">11 Times Square, 8th Floor</div>
+                      <div className="text-gray-300 text-sm">11 Times Square, 6th Floor</div>
                       <div className="text-gray-400 text-xs mt-1">New York, NY 10036</div>
                     </div>
                   </div>
@@ -110,9 +132,9 @@ const ProfessionalFooter = () => {
                   <div className="flex items-start space-x-4 p-4 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 hover:border-green-400/50 hover:bg-white/15 transition-all duration-300">
                     <Users className="w-6 h-6 text-green-400 mt-0.5" />
                     <div>
-                      <div className="text-white font-medium">400+ Business Leaders</div>
-                      <div className="text-gray-300 text-sm">SMB executives & entrepreneurs</div>
-                      <div className="text-gray-400 text-xs mt-1">Exclusive networking environment</div>
+                      <div className="text-white font-medium">150+ Business Leaders</div>
+                      <div className="text-gray-300 text-sm">SMB Executive & Entrepreneurs</div>
+                      <div className="text-gray-400 text-xs mt-1">Exclusive Networking Environment</div>
                     </div>
                   </div>
                 </div>
@@ -129,7 +151,7 @@ const ProfessionalFooter = () => {
                   </div>
                   <div>
                     <div className="font-medium">aspire@emazzanti.net</div>
-                    <div className="text-sm text-gray-400">Registration & inquiries</div>
+                    <div className="text-sm text-gray-400">For inquiries only</div>
                   </div>
                 </a>
                 
@@ -157,16 +179,51 @@ const ProfessionalFooter = () => {
               <div className="pt-4">
                 <h5 className="text-white font-semibold mb-4">Follow ASPIRE</h5>
                 <div className="flex space-x-3">
-                  <a href="#" className="w-12 h-12 bg-blue-500/30 rounded-xl flex items-center justify-center hover:bg-blue-500/50 transition-all duration-300 transform hover:scale-110">
+                  <a 
+                    href="https://www.linkedin.com/company/emazzanti-technologies" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="w-12 h-12 bg-blue-500/30 rounded-xl flex items-center justify-center hover:bg-blue-500/50 transition-all duration-300 transform hover:scale-110"
+                  >
                     <Linkedin className="w-6 h-6 text-white" />
                   </a>
-                  <a href="#" className="w-12 h-12 bg-blue-400/30 rounded-xl flex items-center justify-center hover:bg-blue-400/50 transition-all duration-300 transform hover:scale-110">
+                  <a 
+                    href="https://x.com/emazzanti" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="w-12 h-12 bg-blue-400/30 rounded-xl flex items-center justify-center hover:bg-blue-400/50 transition-all duration-300 transform hover:scale-110"
+                  >
                     <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                     </svg>
                   </a>
-                  <a href="#" className="w-12 h-12 bg-red-500/30 rounded-xl flex items-center justify-center hover:bg-red-500/50 transition-all duration-300 transform hover:scale-110">
+                  <a 
+                    href="https://www.youtube.com/user/emazzantimarketing" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="w-12 h-12 bg-red-500/30 rounded-xl flex items-center justify-center hover:bg-red-500/50 transition-all duration-300 transform hover:scale-110"
+                  >
                     <Youtube className="w-6 h-6 text-white" />
+                  </a>
+                  <a 
+                    href="https://www.facebook.com/emazzantitechnologies/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="w-12 h-12 bg-blue-600/30 rounded-xl flex items-center justify-center hover:bg-blue-600/50 transition-all duration-300 transform hover:scale-110"
+                  >
+                    <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                  </a>
+                  <a 
+                    href="https://www.instagram.com/emazzanti_technologies/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="w-12 h-12 bg-pink-500/30 rounded-xl flex items-center justify-center hover:bg-pink-500/50 transition-all duration-300 transform hover:scale-110"
+                  >
+                    <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987 6.62 0 11.987-5.367 11.987-11.987C24.014 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.321-1.297C4.198 14.553 3.5 13.096 3.5 11.5s.698-3.053 1.628-4.191c.873-.807 2.024-1.297 3.321-1.297 1.297 0 2.448.49 3.321 1.297.93 1.138 1.628 2.595 1.628 4.191s-.698 3.053-1.628 4.191c-.873.807-2.024 1.297-3.321 1.297zm7.064 0c-1.297 0-2.448-.49-3.321-1.297-.93-1.138-1.628-2.595-1.628-4.191s.698-3.053 1.628-4.191c.873-.807 2.024-1.297 3.321-1.297 1.297 0 2.448.49 3.321 1.297.93 1.138 1.628 2.595 1.628 4.191s-.698 3.053-1.628 4.191c-.873.807-2.024 1.297-3.321 1.297z"/>
+                    </svg>
                   </a>
                 </div>
               </div>
@@ -177,21 +234,21 @@ const ProfessionalFooter = () => {
               <h4 className="text-xl font-semibold text-white">Conference</h4>
               <nav className="space-y-3">
                 {[
-                  'Conference Agenda',
-                  'Speaker Lineup',
-                  'Session Tracks',
-                  'Venue & Travel',
-                  'Networking Reception',
-                  'Past Events'
+                  { name: 'Conference Agenda', path: '/agenda' },
+                  { name: 'Speaker Agenda', path: '/speakers' },
+                  { name: 'Session Tracks', path: '/tracks' },
+                  { name: 'Venue & Travel', path: '/venue' },
+                  { name: 'Networking Reception', path: '/networking' },
+                  { name: 'Past Events', path: '/past-events' }
                 ].map((link) => (
-                  <a 
-                    key={link}
-                    href="#"
-                    className="group flex items-center justify-between text-gray-300 hover:text-white transition-all duration-200 py-2 px-3 rounded-lg hover:bg-white/10"
+                  <button 
+                    key={link.name}
+                    onClick={() => handleNavigation(link.path)}
+                    className="group flex items-center justify-between text-gray-300 hover:text-white transition-all duration-200 py-2 px-3 rounded-lg hover:bg-white/10 w-full text-left"
                   >
-                    <span>{link}</span>
+                    <span>{link.name}</span>
                     <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-200" />
-                  </a>
+                  </button>
                 ))}
               </nav>
 
@@ -227,9 +284,22 @@ const ProfessionalFooter = () => {
                 <p className="text-sm mt-1">Celebrating 24 years of technology innovation and business leadership.</p>
               </div>
               <div className="flex items-center space-x-8 text-sm">
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">Privacy Policy</a>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">Terms of Service</a>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">Accessibility</a>
+                <a 
+                  href="https://www.emazzanti.net/privacy-statement/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Privacy Policy
+                </a>
+                <a 
+                  href="https://www.emazzanti.net/terms-of-use/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Terms of Service
+                </a>
               </div>
             </div>
           </div>

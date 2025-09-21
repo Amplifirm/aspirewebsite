@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Calendar, MapPin, Users, ArrowRight, Play, CheckCircle, TrendingUp, DollarSign, Zap, Shield, ChevronRight, X } from 'lucide-react';
 
-import ProfessionalFooter from '../components/Footer';
 
 // Type definitions
 interface Session {
@@ -42,7 +41,10 @@ const HomePage = () => {
   const [selectedTrack, setSelectedTrack] = useState<Track | null>(null);
   const [selectedSpeaker, setSelectedSpeaker] = useState<Speaker | null>(null);
 
-  
+  // Real navigation function
+  const handleNavigation = (path: string) => {
+    window.location.href = path;
+  };
 
   const tracks: Track[] = [
     {
@@ -267,38 +269,38 @@ const HomePage = () => {
     {
       id: 'jack-alexy',
       name: 'Jack Alexy',
-      title: 'Business Leader & Entrepreneur',
-      company: 'Technology Executive',
-      bio: 'Accomplished business leader with extensive experience in scaling technology companies.',
-      fullBio: 'Jack Alexy is a seasoned technology executive with over 20 years of experience leading digital transformation initiatives at Fortune 500 companies. His expertise spans strategic planning, operational excellence, and technology adoption. Jack has successfully led multiple organizations through complex technology implementations, resulting in improved efficiency and significant cost savings. He specializes in helping SMBs navigate the rapidly evolving technology landscape.',
-      expertise: ['Digital Transformation', 'Strategic Leadership', 'Technology Adoption', 'Business Strategy', 'Operational Excellence', 'Change Management'],
-      sessions: ['Keynote: Business Leadership Conversation'],
+      title: 'Olympic Gold Medalist & Student Athlete',
+      company: 'Team USA / UC Berkeley',
+      bio: 'Gold medal-winning swimmer for Team USA who swims collegiately for the University of California, Berkeley. Jack brings unique insights on excellence, performance, and achieving goals under pressure.',
+      fullBio: 'Jack Alexy is a gold medal-winning swimmer for Team USA and current student athlete at the University of California, Berkeley. From Morristown, NJ, Jack comes from a long line of athletes - his mother played for Notre Dame and his grandfather was a professional basketball player with the Detroit Pistons. His experience in high-performance athletics provides valuable insights into goal setting, resilience, and achieving excellence in competitive environments.',
+      expertise: ['High Performance', 'Goal Achievement', 'Resilience', 'Team Leadership'],
+      sessions: ['Keynote: Excellence Under Pressure'],
       achievements: [
-        'Led digital transformation for 3 Fortune 500 companies',
-        'Reduced operational costs by 35% through technology optimization',
-        'Managed technology budgets exceeding $50M annually',
-        'Speaker at 25+ industry conferences'
+        'Olympic Gold Medalist for Team USA',
+        'UC Berkeley collegiate swimmer',
+        'From athletic family legacy',
+        'Expert in performance optimization'
       ],
-      quote: "Technology isn't just about tools—it's about transforming how we think about business.",
-      image: '/jack.jpeg'
+      quote: "Excellence isn't a destination—it's a daily commitment to being better than yesterday.",
+      image: '/susan.jpg'
     },
     {
-      id: 'paul-centenari', 
-      name: 'Paul Centenari',
-      title: 'Serial Entrepreneur',
-      company: '3 Successful Exits',
-      bio: 'Serial entrepreneur who has built, scaled, and successfully sold three companies.',
-      fullBio: 'Paul Centenari is a proven serial entrepreneur with a track record of building and scaling technology companies from startup to successful exit. Having founded and sold three companies with combined valuations exceeding $200M, Paul brings unique insights into the challenges and opportunities facing growing businesses. His experience spans software development, digital marketing, and business strategy, with a particular focus on helping SMBs leverage technology for competitive advantage.',
-      expertise: ['Entrepreneurship', 'Business Growth', 'Technology Strategy', 'Exit Planning', 'Venture Capital', 'Scaling Operations'],
-      sessions: ['Keynote: Business Leadership Conversation'],
+      id: 'jennifer-mazzanti',
+      name: 'Jennifer S. Mazzanti',
+      title: 'Co-Founder & CEO',
+      company: 'eMazzanti Technologies',
+      bio: 'Co-Founder and CEO of eMazzanti Technologies, a Hoboken IT consultancy and MSP recognized for cutting-edge solutions and client-centric innovation. Named a Leader in Digital Technology by NJBIZ in 2024.',
+      fullBio: 'Jennifer S. Mazzanti is the Co-Founder and CEO of eMazzanti Technologies, a Hoboken IT consultancy and MSP recognized for cutting-edge solutions and client-centric innovation. Under her leadership, eMazzanti has grown into a nationally acclaimed firm, recognized for excellence in cybersecurity, cloud services, and digital transformation. A graduate of NYU, Jennifer\'s technical acumen combined with visionary leadership, steering her company to become a trusted advisor for businesses. In 2024, Jennifer was named a Leader in Digital Technology by NJBIZ, recognizing her contributions to innovation and excellence in client and employee service. She is a mentor and advocate for emerging entrepreneurs, sharing insights on scaling businesses, and building resilient teams.',
+      expertise: ['Entrepreneurship', 'Digital Transformation', 'Cybersecurity', 'Business Leadership'],
+      sessions: ['Keynote: Building & Scaling Technology Businesses'],
       achievements: [
-        'Founded and sold 3 companies for $200M+ combined',
-        'Raised over $75M in venture capital funding',
-        'Created 500+ jobs across portfolio companies',
-        'Mentored 50+ startup founders'
+        'Co-Founder and CEO of eMazzanti Technologies',
+        'Named Leader in Digital Technology by NJBIZ (2024)',
+        'NYU Graduate',
+        'Nationally acclaimed IT consultancy leader'
       ],
-      quote: "Every business challenge is an opportunity in disguise—technology just helps you see it faster.",
-      image: 'https://media.licdn.com/dms/image/v2/C5603AQEF7yxiQdlGOA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1517695752385?e=1760572800&v=beta&t=mH-XOX2Zjk_EtrSESJUppn8udbvVJJr95mwXxGFxxzk'
+      quote: "Innovation isn't just about technology—it's about transforming possibilities into realities for our clients.",
+      image: '/Jennifer Mazzanti 2024_300dpiRGB1.jpg'
     }
   ];
 
@@ -320,8 +322,6 @@ const HomePage = () => {
                   className="h-24 w-auto"
                 />
               </div>
-
-             
 
               {/* Headline */}
               <div>
@@ -356,7 +356,7 @@ const HomePage = () => {
                 <button 
                   className="px-8 py-4 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 animate-fadeInUp delay-400 transform hover:scale-105 font-roboto"
                   style={{background: 'linear-gradient(135deg, #3C1AF9, #B61BFD)'}}
-                  onClick={() => window.location.href = '/register'}
+                  onClick={() => handleNavigation('/register')}
                 >
                   <div className="flex items-center justify-center space-x-2">
                     <span>Register Now</span>
@@ -367,6 +367,7 @@ const HomePage = () => {
                 <button 
                   className="px-8 py-4 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 animate-fadeInUp delay-500 transform hover:scale-105 font-roboto"
                   style={{background: 'linear-gradient(135deg, #1DC5AC, #2EA1ED)'}}
+                  onClick={() => window.open('https://youtu.be/4lrA4owaTKE', '_blank')}
                 >
                   <div className="flex items-center justify-center space-x-2">
                     <Play className="w-5 h-5" />
@@ -405,7 +406,7 @@ const HomePage = () => {
                   <Users className="w-5 h-5" style={{color: '#2EA1ED'}} />
                   <div>
                     <div className="font-bold text-gray-900 font-roboto">Networking Reception</div>
-                    <div className="text-gray-600 text-sm font-roboto">5:30 PM - 7:30 PM</div>
+                    <div className="text-gray-600 text-sm font-roboto">5:00 PM - 8:00 PM</div>
                   </div>
                 </div>
               </div>
@@ -453,7 +454,7 @@ const HomePage = () => {
                   <button 
                     className="w-full py-4 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 animate-fadeInUp delay-700 transform hover:scale-105 font-roboto"
                     style={{background: 'linear-gradient(135deg, #3C1AF9, #B61BFD)'}}
-                    onClick={() => window.location.href = '/register'}
+                    onClick={() => handleNavigation('/register')}
                   >
                     Reserve Your Seat
                   </button>
@@ -465,72 +466,74 @@ const HomePage = () => {
       </section>
 
       {/* What's In It For You Section - Updated Content */}
-<section className="py-20 px-6 bg-white">
-  <div className="max-w-6xl mx-auto text-center">
-    <h2 className="text-5xl lg:text-6xl font-light text-gray-900 mb-8 font-roboto">
-      What is in it for you? <span 
-        className="font-light bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent"
-        style={{
-          background: 'linear-gradient(135deg, #3C1AF9, #B61BFD)',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          backgroundClip: 'text'
-        }}
-      >
-        Actionable Insights.
-      </span>
-    </h2>
-    
-    <div className="space-y-8 text-xl lg:text-2xl text-gray-600 leading-relaxed max-w-5xl mx-auto font-roboto">
-      <p>
-        We will deliver ROI strategies, expert networking opportunities, a competitive 
-        technology edge, and proven solutions you can implement Monday morning to 
-        transform your business.
-      </p>
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-5xl lg:text-6xl font-light text-gray-900 mb-8 font-roboto">
+            What is in it for you? <span 
+              className="font-light bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent"
+              style={{
+                background: 'linear-gradient(135deg, #3C1AF9, #B61BFD)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text'
+              }}
+            >
+              Actionable Insights.
+            </span>
+          </h2>
+          
+          <div className="space-y-6 text-lg lg:text-xl text-gray-600 leading-relaxed max-w-5xl mx-auto font-roboto">
+            <p>
+              We will deliver ROI strategies, expert networking opportunities, a competitive 
+              technology edge, and proven solutions you can implement Monday morning to 
+              transform your business.
+            </p>
+            
+            <p>
+              <strong>ASPIRE 2025 is more than a conference</strong>—it's a launchpad for innovation, 
+              collaboration, and transformation. This year's program is organized into four 
+              dynamic tracks, each designed to empower attendees with actionable insights 
+              and forward-thinking strategies.
+            </p>
+            
+            <p>
+              Today the roadmap for success is not clear. The economic landscape is changing 
+              from tariffs to AI to Human Capital. Making the right decisions is harder now 
+              than ever before.
+            </p>
+            
+            <p className="text-xl lg:text-2xl font-medium text-gray-900">
+              Technology is the great equalizer.
+            </p>
+          </div>
+        </div>
+      </section>
+
       
-      <p>
-        Aspire 2025 is more than a conference—it's a launchpad for innovation, 
-        collaboration, and transformation. This year's program is organized into four 
-        dynamic tracks, each designed to empower attendees with actionable insights 
-        and forward-thinking strategies.
-      </p>
-      
-      <p>
-        Today the roadmap for success is not clear. The economic landscape is changing 
-        from tariffs to AI to Human Capital. Making the right decisions is harder now 
-        than ever before.
-      </p>
-      
-      <p className="text-2xl lg:text-3xl font-medium text-gray-900">
-        Technology is the great equalizer.
-      </p>
-    </div>
-  </div>
-</section>
 
       {/* Our Proven 4-Track Approach - Updated with Black Line and No Numbers */}
-<section className="py-20 px-6 bg-gradient-to-br from-gray-100 to-white">
-  <div className="max-w-7xl mx-auto">
-    <div className="text-center mb-16">
-      <h2 className="text-5xl font-light text-gray-900 mb-6 font-roboto">
-        Our Proven <span 
-          className="font-light bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent font-roboto"
-          style={{
-            background: 'linear-gradient(135deg, #3C1AF9, #B61BFD)',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
-            backgroundClip: 'text'
-          }}
-        >
-          4-track
-        </span> Learning Approach
-      </h2>
-      <p className="text-xl text-gray-600 max-w-4xl mx-auto font-roboto">
-        Whether you are looking to drive revenue, reduce expenses, increase operational efficiency or solidify your cybersecurity posture, you will find concrete information to help you and your organization take the next right step.
-        
-        We will not waste your time. Every session is strategically designed, expertly delivered, and continuously optimized for maximum business impact.
-      </p>
-    </div>
+      <section className="py-20 px-6 bg-gradient-to-br from-gray-100 to-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-light text-gray-900 mb-6 font-roboto">
+              Our Proven <span 
+                className="font-light bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent font-roboto"
+                style={{
+                  background: 'linear-gradient(135deg, #3C1AF9, #B61BFD)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text'
+                }}
+              >
+                4-track
+              </span> Learning Approach
+            </h2>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto font-roboto">
+              Whether you are looking to drive revenue, reduce expenses, increase operational efficiency or solidify your cybersecurity posture, you will find concrete information to help you and your organization take the next right step.
+              
+              We will not waste your time. Every session is strategically designed, expertly delivered, and continuously optimized for maximum business impact.
+            </p>
+          </div>
 
           {/* Visual Process Flow - Black Line */}
           <div className="relative mb-16">
@@ -557,9 +560,9 @@ const HomePage = () => {
                   </div>
                   
                   <div className={`${track.bgColor} rounded-3xl p-6 shadow-lg border border-gray-300 hover:shadow-xl transition-all duration-300 hover:-translate-y-2`}>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3 font-roboto">
-  {track.title}
-</h3>
+                    <h3 className="text-xl font-bold text-gray-900 mb-3 font-roboto">
+                      {track.title}
+                    </h3>
                     <p className="text-gray-600 leading-relaxed mb-4 font-roboto">
                       {track.description}
                     </p>
@@ -602,17 +605,29 @@ const HomePage = () => {
       <section className="py-20 px-6 bg-white">
         <div className="max-w-4xl mx-auto text-center">
           <div className="bg-gradient-to-br from-gray-100 to-white rounded-3xl p-16 shadow-xl border border-gray-100">
-            <h2 className="text-5xl font-light text-gray-900 mb-8 font-roboto">Ready to Transform Your Business?</h2>
+            <h2 className="text-5xl font-light text-gray-900 mb-8 font-roboto">
+              The Time to Transform Your Business is <span 
+                className="font-light bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent"
+                style={{
+                  background: 'linear-gradient(135deg, #3C1AF9, #B61BFD)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text'
+                }}
+              >
+                NOW
+              </span>
+            </h2>
             <p className="text-xl text-gray-700 mb-12 font-roboto">
               Join 150+ business leaders for a day of learning, networking, and growth 
               at Microsoft Technology Center.
             </p>
             
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
               {[
                 '✓ Complimentary Admission',
-                '✓ Lunch Included',
-                '✓ Networking Reception', 
+                '✓ Networking Opportunities',
+                '✓ Access to Experts', 
                 
               ].map((feature, i) => (
                 <div key={i} className="bg-green-50 rounded-2xl p-4 border border-green-200">
@@ -625,7 +640,7 @@ const HomePage = () => {
               <button 
                 className="px-12 py-4 text-white text-xl font-light rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 font-roboto"
                 style={{background: 'linear-gradient(135deg, #3C1AF9, #B61BFD)'}}
-                onClick={() => window.location.href = '/register'}
+                onClick={() => handleNavigation('/register')}
               >
                 <div className="flex items-center justify-center space-x-3">
                   <span>Register Now - It's Free</span>
@@ -636,6 +651,7 @@ const HomePage = () => {
               <button 
                 className="px-12 py-4 text-white text-xl font-light rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 font-roboto"
                 style={{background: 'linear-gradient(135deg, #1DC5AC, #2EA1ED)'}}
+                onClick={() => handleNavigation('/agenda')}
               >
                 <div className="flex items-center justify-center space-x-3">
                   <span>View Agenda</span>
@@ -646,8 +662,6 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-
-    
 
       {/* Modals - Updated with Bold Titles */}
       {selectedTrack && (
@@ -734,7 +748,7 @@ const HomePage = () => {
               <button 
                 className="flex-1 py-4 text-white font-light rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 font-roboto text-lg"
                 style={{background: `linear-gradient(135deg, ${selectedTrack.color}, #B61BFD)`}}
-                onClick={() => window.location.href = '/register'}
+                onClick={() => handleNavigation('/register')}
               >
                 Register for This Track
               </button>
@@ -830,7 +844,7 @@ const HomePage = () => {
               <button 
                 className="flex-1 py-4 text-white font-light rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 font-roboto"
                 style={{background: 'linear-gradient(135deg, #3C1AF9, #B61BFD)'}}
-                onClick={() => window.location.href = '/register'}
+                onClick={() => handleNavigation('/register')}
               >
                 Register to See This Speaker
               </button>
@@ -845,7 +859,8 @@ const HomePage = () => {
         </div>
       )}
 
-<ProfessionalFooter/>
+      
+
       <style>
         {`
           @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');

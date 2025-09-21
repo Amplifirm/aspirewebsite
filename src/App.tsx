@@ -9,6 +9,7 @@ import Register from './pages/Register';
 import Navbar from './components/Navbar';
 import Dashboard from './pages/Dashboard';
 import VenuePage from './pages/Venue';
+import ProfessionalFooter from './components/Footer';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/venue" element={<VenuePage />} />
         </Routes>
       </div>
+      <ProfessionalFooter/>
     </Router>
   );
 }

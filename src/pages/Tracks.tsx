@@ -77,7 +77,7 @@ const TracksPage = () => {
       sessions: [
         {
           id: 'fc-motown',
-          title: "FC Motown: How the little guy can succeed in business and sport",
+          title: "How the Little Guy can Cucceed in Business and Sport: FC Motown",
           speaker: "Dan Karosen",
           time: "10:25 AM - 10:50 AM",
           description: "Discover how FC Motown rose from local play to NPSL National Championship through bold leadership and vision.",

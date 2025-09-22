@@ -574,7 +574,7 @@ const AgendaPage = () => {
               </div>
               <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
                 <Users className="w-6 h-6 text-blue-500 mx-auto mb-2" />
-                <div className="font-semibold text-gray-900">200+ Attendees</div>
+                <div className="font-semibold text-gray-900">150+ Attendees</div>
                 <div className="text-gray-600 text-sm">SMB Leaders & Executives</div>
               </div>
             </div>

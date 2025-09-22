@@ -422,7 +422,7 @@ const AgendaPage = () => {
     {
       time: '5:30 PM - 7:30 PM',
       type: 'special',
-      title: 'Networking Reception',
+      title: 'Networking Dinner',
       description: 'Cocktails, appetizers, and continued networking'
     }
   ];

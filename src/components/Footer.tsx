@@ -16,9 +16,19 @@ const ProfessionalFooter = () => {
       <div className="bg-white">
         <div className="max-w-7xl mx-auto px-8 py-24">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-light text-gray-900 mb-8 font-roboto">
-              Historical Conference Highlights
-            </h2>
+          <h2 className="text-5xl font-light text-gray-900 mb-8 font-roboto">
+  Historical Conference <span 
+    className="font-light bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent"
+    style={{
+      background: 'linear-gradient(135deg, #3C1AF9, #B61BFD)',
+      WebkitBackgroundClip: 'text',
+      WebkitTextFillColor: 'transparent',
+      backgroundClip: 'text'
+    }}
+  >
+    Highlights
+  </span>
+</h2>
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">

@@ -626,8 +626,8 @@ const AgendaPage = () => {
 
                 {/* Content */}
                 {slot.type === 'special' || slot.type === 'keynote' || slot.type === 'break' ? (
-                  <div className="p-6">
-                    <div className="flex items-start space-x-4">
+                 <div className="p-6 flex justify-center">
+                    <div className="flex flex-col items-center text-center space-y-3 max-w-2xl">
                       {slot.type === 'break' ? (
                         <Coffee className="w-6 h-6 text-green-500 mt-1" />
                       ) : slot.type === 'keynote' ? (

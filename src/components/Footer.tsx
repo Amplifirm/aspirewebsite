@@ -1,7 +1,7 @@
 import { 
   Phone, Mail, MapPin, Linkedin, Youtube,
   Calendar, Users, ArrowRight, 
-  Star, CheckCircle, Globe
+ CheckCircle, Globe
 } from 'lucide-react';
 
 const ProfessionalFooter = () => {
@@ -26,19 +26,9 @@ const ProfessionalFooter = () => {
             {/* Left Content */}
             <div className="space-y-8">
               <div className="space-y-6">
-                <div className="inline-flex items-center space-x-3 px-4 py-2 bg-gradient-to-r from-blue-500/10 to-purple-500/10 backdrop-blur-sm border border-blue-500/20 rounded-full">
-                  <Star className="w-4 h-4 text-blue-600" />
-                  <span className="text-blue-700 font-medium text-sm">ASPIRE 2024 HIGHLIGHTS</span>
-                </div>
+               
                 
-                <h3 className="text-6xl font-light text-gray-900 leading-tight">
-                  23 Years of
-                  <br />
-                  <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent font-normal">
-                    Learning
-                  </span>
-                </h3>
-                
+              
                 <p className="text-xl text-gray-700 leading-relaxed">
                   In 2024, the conference was named 23 Years of Learning. It has now been rebranded as 
                   <strong> ASPIRE 2025</strong> with the same commitment to SMB leaders.

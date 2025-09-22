@@ -170,7 +170,7 @@ const AgendaPage = () => {
       time: '9:30 AM - 10:15 AM',
       type: 'keynote',
       title: 'KEYNOTE: Business Leadership Conversation',
-      speaker: 'Jack Alexy & Paul Centenari',
+      speaker: 'Jack Alexy & Jennifer S. Mazzanti',
       description: 'Industry leaders discuss resilience, decision-making, and leveraging technology for rapid business growth'
     },
     {

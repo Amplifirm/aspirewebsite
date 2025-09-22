@@ -221,7 +221,7 @@ const HomePage = () => {
       sessions: [
         {
           title: "Latest AI Security Threats",
-          speaker: "John Williamson",
+          speaker: "Scott Williamson",
           time: "10:25 AM - 10:50 AM",
           description: "Latest update on evolving AI-based threats and how to protect SMBs successfully."
         },

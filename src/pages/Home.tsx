@@ -466,7 +466,7 @@ const HomePage = () => {
       </section>
 
       {/* What's In It For You Section - Updated Content */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-20 px-6 bg-gradient-to-br from-gray-100 to-white">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-5xl lg:text-6xl font-light text-gray-900 mb-8 font-roboto">
             What is in it for you? <span 

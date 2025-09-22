@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { 
   MapPin, Building, Car, Train, 
   Calendar, Clock, ArrowRight, CheckCircle,  
-  User, Coffee, UtensilsCrossed, Star, Users
+  User, Coffee, UtensilsCrossed, Users
 } from 'lucide-react';
 
 const VenuePage = () => {

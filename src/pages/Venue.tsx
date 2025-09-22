@@ -2,8 +2,9 @@ import { useState, useEffect } from 'react';
 import { 
   MapPin, Building, Car, Train, 
   Calendar, Clock, ArrowRight, CheckCircle,  
-  User
+  User, Coffee, UtensilsCrossed, Star, Users
 } from 'lucide-react';
+
 const VenuePage = () => {
   const [user, setUser] = useState(null);
 
@@ -37,6 +38,33 @@ const VenuePage = () => {
     }
   ];
 
+  const eventSchedule = [
+    {
+      time: "9:00 AM - 9:30 AM",
+      title: "Registration & Welcome Breakfast",
+      sponsor: "Microsoft",
+      sponsorLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/2560px-Microsoft_logo_%282012%29.svg.png",
+      icon: <Coffee className="w-5 h-5" />,
+      description: "Network over premium breakfast provided by Microsoft"
+    },
+    {
+      time: "12:00 PM - 1:00 PM", 
+      title: "Lunch & Panel Discussion",
+      sponsor: "WatchGuard",
+      sponsorLogo: "https://www.infinigate.com/wp-content/uploads/2023/04/WatchGuard_logo.svg",
+      icon: <UtensilsCrossed className="w-5 h-5" />,
+      description: "Gourmet lunch and industry insights courtesy of WatchGuard"
+    },
+    {
+      time: "9:30 AM - 4:30 PM",
+      title: "Conference Sessions",
+      sponsor: "eMazzanti Technologies",
+      sponsorLogo: "/eMazzanti_logo_441x120px_LightBkgrnd.png",
+      icon: <Users className="w-5 h-5" />,
+      description: "24 expert-led sessions across 4 strategic tracks"
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white font-roboto">
       {/* Hero Section */}
@@ -47,10 +75,10 @@ const VenuePage = () => {
             {/* Left Content */}
             <div className="space-y-8">
               <div>
-                <h1 className="text-5xl sm:text-6xl font-light text-gray-900 mb-6 tracking-tight font-roboto">
+                <h1 className="text-5xl sm:text-6xl font-light text-gray-900 mb-6 tracking-tight">
                   Microsoft Technology Center
                 </h1>
-                <p className="text-xl text-gray-600 mb-8 leading-relaxed font-roboto">
+                <p className="text-xl text-gray-600 mb-8 leading-relaxed">
                   Join us in the heart of <strong>Times Square, NYC</strong> at Microsoft's flagship 
                   technology center. A world-class venue designed for innovation, collaboration, 
                   and transformative business experiences.
@@ -62,8 +90,8 @@ const VenuePage = () => {
                 <div className="flex items-start space-x-4">
                   <MapPin className="w-6 h-6 text-blue-600 mt-1" />
                   <div>
-                    <h3 className="font-bold text-gray-900 mb-2 font-roboto">Venue Address</h3>
-                    <p className="text-gray-700 mb-2 font-roboto">
+                    <h3 className="font-bold text-gray-900 mb-2">Venue Address</h3>
+                    <p className="text-gray-700 mb-2">
                       Microsoft Technology Center<br/>
                       11 Times Square, 6th Floor<br/>
                       New York, NY 10036
@@ -71,23 +99,25 @@ const VenuePage = () => {
                     <div className="flex items-center space-x-4 text-sm text-gray-600">
                       <div className="flex items-center space-x-1">
                         <Train className="w-4 h-4" />
-                        <span className="font-roboto">2 min to subway</span>
+                        <span>2 min to subway</span>
                       </div>
                       <div className="flex items-center space-x-1">
                         <Car className="w-4 h-4" />
-                        <span className="font-roboto">5 min to parking</span>
+                        <span>5 min to parking</span>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
 
+              
+
               {/* CTA */}
               <div className="flex flex-col sm:flex-row gap-4">
                 {user ? (
                   <button
                     onClick={() => handleNavigation('/dashboard')}
-                    className="px-8 py-4 bg-blue-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 font-roboto"
+                    className="px-8 py-4 bg-blue-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                   >
                     <div className="flex items-center justify-center space-x-2">
                       <User className="w-5 h-5" />
@@ -97,7 +127,7 @@ const VenuePage = () => {
                 ) : (
                   <button
                     onClick={() => handleNavigation('/register')}
-                    className="px-8 py-4 bg-blue-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 font-roboto"
+                    className="px-8 py-4 bg-blue-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                   >
                     <div className="flex items-center justify-center space-x-2">
                       <span>Reserve Your Seat</span>
@@ -108,7 +138,7 @@ const VenuePage = () => {
                 
                 <button 
                   onClick={() => window.open('https://maps.google.com/maps?q=Microsoft+Technology+Center+11+Times+Square+New+York', '_blank')}
-                  className="px-8 py-4 border-2 border-gray-300 text-gray-700 font-semibold rounded-xl hover:border-gray-400 hover:bg-gray-50 transition-all duration-300 font-roboto"
+                  className="px-8 py-4 border-2 border-gray-300 text-gray-700 font-semibold rounded-xl hover:border-gray-400 hover:bg-gray-50 transition-all duration-300"
                 >
                   <div className="flex items-center justify-center space-x-2">
                     <MapPin className="w-5 h-5" />
@@ -137,16 +167,16 @@ const VenuePage = () => {
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3 p-3 bg-gray-50 rounded-xl">
                     <Building className="w-5 h-5 text-blue-600" />
-                    <span className="text-gray-700 font-roboto">11 Times Square, 6th Floor</span>
+                    <span className="text-gray-700">11 Times Square, 6th Floor</span>
                   </div>
                   <div className="flex items-center space-x-3 p-3 bg-gray-50 rounded-xl">
                     <Clock className="w-5 h-5 text-green-600" />
-                    <span className="text-gray-700 font-roboto">October 15, 2025 • 9:00 AM - 5:00 PM</span>
+                    <span className="text-gray-700">October 15, 2025 • 9:00 AM - 5:00 PM</span>
                   </div>
                   
                   <button 
                     onClick={() => window.open('https://maps.google.com/maps?q=Microsoft+Technology+Center+11+Times+Square+New+York', '_blank')}
-                    className="w-full py-3 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-colors font-roboto"
+                    className="w-full py-3 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-colors"
                   >
                     Open in Google Maps
                   </button>
@@ -157,14 +187,65 @@ const VenuePage = () => {
         </div>
       </section>
 
+      {/* Event Schedule with Sponsors */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-light text-gray-900 mb-6">
+              Event Schedule & Sponsorship
+            </h2>
+            <p className="text-xl text-gray-600">
+              A full day of learning, networking, and premium experiences courtesy of our sponsors
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {eventSchedule.map((item, i) => (
+              <div key={i} className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                <div className="text-center space-y-4">
+                  <div className="p-4 bg-blue-100 rounded-2xl text-blue-600 inline-block mb-4">
+                    {item.icon}
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">{item.title}</h3>
+                  <div className="text-sm font-medium text-blue-600 bg-blue-50 rounded-full px-4 py-2 inline-block mb-3">
+                    {item.time}
+                  </div>
+                  <p className="text-gray-600 leading-relaxed mb-4">{item.description}</p>
+                  <div className="bg-white rounded-xl p-4 border border-gray-200">
+                    <div className="text-xs text-gray-500 mb-2">Sponsored by</div>
+                    <div className="h-8 flex items-center justify-center">
+                      <img 
+                        src={item.sponsorLogo} 
+                        alt={`${item.sponsor} logo`}
+                        className="max-h-8 max-w-full object-contain"
+                        onError={(e) => {
+                          e.currentTarget.style.display = 'none';
+                          const nextElement = e.currentTarget.nextElementSibling as HTMLElement;
+                          if (nextElement) {
+                            nextElement.style.display = 'block';
+                          }
+                        }}
+                      />
+                      <div className="font-bold text-gray-900 text-sm hidden">
+                        {item.sponsor}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Getting There */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-light text-gray-900 mb-6 font-roboto">
+            <h2 className="text-4xl font-light text-gray-900 mb-6">
               Transportation Options
             </h2>
-            <p className="text-xl text-gray-600 font-roboto">
+            <p className="text-xl text-gray-600">
               Multiple convenient ways to reach Microsoft Technology Center in Times Square
             </p>
           </div>
@@ -172,15 +253,15 @@ const VenuePage = () => {
           {/* Transportation Options */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
             {transportationOptions.map((option, i) => (
-              <div key={i} className="bg-gray-100 rounded-2xl p-6 border border-gray-200">
+              <div key={i} className="bg-gray-50 rounded-2xl p-6 border border-gray-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
                 <div className="text-center space-y-4">
                   <div className="p-3 bg-blue-100 rounded-lg text-blue-600 inline-block">
                     {option.icon}
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-900 mb-2 font-roboto">{option.title}</h4>
-                    <span className="text-sm text-blue-600 font-medium font-roboto block mb-2">{option.walkTime}</span>
-                    <p className="text-gray-600 text-sm leading-relaxed font-roboto">{option.description}</p>
+                    <h4 className="font-bold text-gray-900 mb-2">{option.title}</h4>
+                    <span className="text-sm text-blue-600 font-medium block mb-2">{option.walkTime}</span>
+                    <p className="text-gray-600 text-sm leading-relaxed">{option.description}</p>
                   </div>
                 </div>
               </div>
@@ -190,13 +271,13 @@ const VenuePage = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-20 px-6 bg-gradient-to-br from-blue-50 to-purple-50">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="bg-gradient-to-br from-gray-100 to-white rounded-3xl p-16 shadow-xl border border-gray-100">
-            <h2 className="text-5xl font-light text-gray-900 mb-8 font-roboto">
+          <div className="bg-white rounded-3xl p-16 shadow-xl border border-gray-200">
+            <h2 className="text-5xl font-light text-gray-900 mb-8">
               Ready to Experience Innovation?
             </h2>
-            <p className="text-xl text-gray-700 mb-12 font-roboto">
+            <p className="text-xl text-gray-700 mb-12">
               Join us at Microsoft Technology Center for a day of learning, networking, 
               and transformation in the heart of New York City.
             </p>
@@ -209,7 +290,7 @@ const VenuePage = () => {
                 '✓ Times Square Location'
               ].map((feature, i) => (
                 <div key={i} className="bg-green-50 rounded-2xl p-4 border border-green-200">
-                  <span className="text-emerald-700 font-medium text-sm font-roboto">{feature}</span>
+                  <span className="text-emerald-700 font-medium text-sm">{feature}</span>
                 </div>
               ))}
             </div>
@@ -219,7 +300,7 @@ const VenuePage = () => {
                 <>
                   <button
                     onClick={() => handleNavigation('/dashboard')}
-                    className="px-12 py-4 bg-blue-600 text-white text-xl font-medium rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 font-roboto"
+                    className="px-12 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-xl font-medium rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                   >
                     <div className="flex items-center justify-center space-x-3">
                       <User className="w-6 h-6" />
@@ -228,7 +309,7 @@ const VenuePage = () => {
                   </button>
                   <button
                     onClick={() => handleNavigation('/agenda')}
-                    className="px-12 py-4 border-2 border-gray-300 text-gray-700 text-xl font-medium rounded-2xl hover:border-gray-400 hover:bg-gray-50 transition-all duration-300 font-roboto"
+                    className="px-12 py-4 border-2 border-gray-300 text-gray-700 text-xl font-medium rounded-2xl hover:border-gray-400 hover:bg-gray-50 transition-all duration-300"
                   >
                     <div className="flex items-center justify-center space-x-3">
                       <Calendar className="w-6 h-6" />
@@ -240,7 +321,7 @@ const VenuePage = () => {
                 <>
                   <button
                     onClick={() => handleNavigation('/register')}
-                    className="px-12 py-4 bg-blue-600 text-white text-xl font-medium rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 font-roboto"
+                    className="px-12 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-xl font-medium rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                   >
                     <div className="flex items-center justify-center space-x-3">
                       <span>Register Now - It's Free</span>
@@ -250,7 +331,7 @@ const VenuePage = () => {
                   
                   <button
                     onClick={() => window.open('https://maps.google.com/maps?q=Microsoft+Technology+Center+11+Times+Square+New+York', '_blank')}
-                    className="px-12 py-4 border-2 border-gray-300 text-gray-700 text-xl font-medium rounded-2xl hover:border-gray-400 hover:bg-gray-50 transition-all duration-300 font-roboto"
+                    className="px-12 py-4 border-2 border-gray-300 text-gray-700 text-xl font-medium rounded-2xl hover:border-gray-400 hover:bg-gray-50 transition-all duration-300"
                   >
                     <div className="flex items-center justify-center space-x-3">
                       <MapPin className="w-6 h-6" />
@@ -263,8 +344,6 @@ const VenuePage = () => {
           </div>
         </div>
       </section>
-
-     
 
       <style>
         {`

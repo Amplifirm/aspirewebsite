@@ -287,7 +287,7 @@ const AgendaPage = () => {
           id: 'company-safety',
           track: 'cybersecurity',
           title: 'How to Keep Your Company Safe',
-          speaker: 'John Logan & Scott Bennett',
+          speaker: 'John Logan & Scott Bennet',
           description: 'Comprehensive disaster recovery planning including all departments and customer communications.',
           fullDescription: 'Whether it is climate change, terrorism, or a breach, it is important to have a disaster recovery plan that includes all departments, customer communications, and recovery methods. This session will provide an overview and touchpoints of the key elements required to get your business back on track, maintain customer and supplier confidence, and run quickly.'
         }

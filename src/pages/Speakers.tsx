@@ -115,8 +115,8 @@ const SpeakersPage = () => {
       image: '/bryanantepara.jpg'
     },
     {
-      id: 'scott-bennett',
-      name: 'Scott Bennett',
+      id: 'scott-bennet',
+      name: 'Scott Bennet',
       title: 'Senior Network Engineer',
       company: 'Information Security Team',
       bio: 'Senior Network Engineer and a member of the Information Security team, with extensive experience in designing, implementing, and maintaining secure network systems.',
@@ -475,7 +475,7 @@ const SpeakersPage = () => {
             </div>
             <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
               <Building className="w-6 h-6 text-green-500 mx-auto mb-2" />
-              <div className="text-2xl font-light text-gray-900">150+</div>
+              <div className="text-2xl font-light text-gray-900">167+</div>
               <div className="text-gray-600 text-sm">Years Experience</div>
             </div>
           </div>

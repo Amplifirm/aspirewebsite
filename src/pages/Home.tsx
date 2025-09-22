@@ -244,7 +244,7 @@ const HomePage = () => {
           description: "Emerging threats, regulatory shifts, and defense strategies shaping the next two years."
         },
         {
-          title: "Top 10 Cyber Security recommendations for Businesses Large and Small",
+          title: "Top 10 Cybersecurity recommendations for Businesses Large and Small",
           speaker: "Carl Mazzanti",
           time: "2:00 PM - 2:50 PM",
           description: "Essential guidance for protecting organizations against today's evolving digital threats."

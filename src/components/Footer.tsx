@@ -237,9 +237,8 @@ const ProfessionalFooter = () => {
                   { name: 'Conference Agenda', path: '/agenda' },
                   { name: 'Speaker Agenda', path: '/speakers' },
                   { name: 'Session Tracks', path: '/tracks' },
-                  { name: 'Venue & Travel', path: '/venue' },
-                  { name: 'Networking Reception', path: '/networking' },
-                  { name: 'Past Events', path: '/past-events' }
+                  { name: 'Venue', path: '/venue' },
+          
                 ].map((link) => (
                   <button 
                     key={link.name}

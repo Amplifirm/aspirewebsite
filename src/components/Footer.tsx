@@ -1,7 +1,7 @@
 import { 
   Phone, Mail, MapPin, Linkedin, Youtube,
   Calendar, Users, ArrowRight, 
- CheckCircle, Globe
+ CheckCircle, Globe, Instagram
 } from 'lucide-react';
 
 const ProfessionalFooter = () => {
@@ -221,9 +221,7 @@ const ProfessionalFooter = () => {
                     rel="noopener noreferrer"
                     className="w-12 h-12 bg-pink-500/30 rounded-xl flex items-center justify-center hover:bg-pink-500/50 transition-all duration-300 transform hover:scale-110"
                   >
-                    <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987 6.62 0 11.987-5.367 11.987-11.987C24.014 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.321-1.297C4.198 14.553 3.5 13.096 3.5 11.5s.698-3.053 1.628-4.191c.873-.807 2.024-1.297 3.321-1.297 1.297 0 2.448.49 3.321 1.297.93 1.138 1.628 2.595 1.628 4.191s-.698 3.053-1.628 4.191c-.873.807-2.024 1.297-3.321 1.297zm7.064 0c-1.297 0-2.448-.49-3.321-1.297-.93-1.138-1.628-2.595-1.628-4.191s.698-3.053 1.628-4.191c.873-.807 2.024-1.297 3.321-1.297 1.297 0 2.448.49 3.321 1.297.93 1.138 1.628 2.595 1.628 4.191s-.698 3.053-1.628 4.191c-.873.807-2.024 1.297-3.321 1.297z"/>
-                    </svg>
+                    <Instagram className="w-6 h-6 text-white" />
                   </a>
                 </div>
               </div>
@@ -235,7 +233,7 @@ const ProfessionalFooter = () => {
               <nav className="space-y-3">
                 {[
                   { name: 'Conference Agenda', path: '/agenda' },
-                  { name: 'Speaker Agenda', path: '/speakers' },
+                  { name: 'Speaker Bios', path: '/speakers' },
                   { name: 'Session Tracks', path: '/tracks' },
                   { name: 'Venue', path: '/venue' },
           

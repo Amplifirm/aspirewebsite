@@ -186,7 +186,7 @@ const AgendaPage = () => {
         {
           id: 'fc-motown',
           track: 'revenue',
-          title: 'FC Motown: How the little guy can succeed in business and sport',
+          title: 'How the Little Guy Can Succeed in Business and Sport: FC Motown',
           speaker: 'Dan Karosen',
           description: 'Discover how FC Motown rose from local play to NPSL National Championship through bold leadership and vision.',
           fullDescription: 'Discover how FC Motown, a semi-professional soccer club founded in 2012, rose from local play in Morristown, New Jersey, to winning the 2022 NPSL National Championship through bold leadership and vision. Owner Dan Karosen will highlight the decisions, culture, and strategies that allowed a small organization to outperform bigger, better-funded rivals. Attendees will gain practical leadership insights they can apply to business—proving that the right mindset and direction can turn underdogs into champions.'

@@ -186,7 +186,7 @@ const AgendaPage = () => {
         {
           id: 'fc-motown',
           track: 'revenue',
-          title: 'How the Little Guy Can Succeed in Business and Sport: FC Motown',
+          title: 'How the little guy can succeed in business and sports: FC Motown',
           speaker: 'Dan Karosen',
           description: 'Discover how FC Motown rose from local play to NPSL National Championship through bold leadership and vision.',
           fullDescription: 'Discover how FC Motown, a semi-professional soccer club founded in 2012, rose from local play in Morristown, New Jersey, to winning the 2022 NPSL National Championship through bold leadership and vision. Owner Dan Karosen will highlight the decisions, culture, and strategies that allowed a small organization to outperform bigger, better-funded rivals. Attendees will gain practical leadership insights they can apply to business—proving that the right mindset and direction can turn underdogs into champions.'
@@ -208,9 +208,9 @@ const AgendaPage = () => {
           fullDescription: 'For many small businesses, the cloud offers a smarter, more cost-effective way to operate—but the transition can feel daunting. This presentation will break down the process into clear, actionable steps, helping you understand what to expect and how to prepare. You\'ll walk away with practical guidance to avoid costly missteps and ensure your move to the cloud supports growth, efficiency, and long-term success.'
         },
         {
-          id: 'ai-security-threats',
+          id: 'ai-threat-defense',
           track: 'cybersecurity',
-          title: 'Latest AI Security Threats',
+          title: 'From Alerts to Action: AI-Powered Threat Defense',
           speaker: 'Scott Williamson',
           description: 'Latest update on evolving AI-based threats and how to protect SMBs successfully.',
           fullDescription: 'The threats to SMBs and the cybersecurity landscape change constantly, month by month. WatchGuard sees it all. Come and get the very latest update on the evolving AI-based threats we\'re seeing in our SOC and learn how we\'re successfully protecting SMBs with our comprehensive security solutions.'
@@ -263,7 +263,7 @@ const AgendaPage = () => {
           id: 'customer-success',
           track: 'revenue',
           title: 'How Customer Success Can Supercharge Your Revenue',
-          speaker: 'Brinda Vani',
+          speaker: 'Brindavani Pathuri',
           description: 'How building stronger customer relationships directly fuels growth and retention.',
           fullDescription: 'Explore how building stronger customer relationships directly fuels growth and retention. Drawing on real-world lessons from the field, the speaker highlights how proactive support and technical guidance translate into measurable revenue impact. Attendees will walk away with practical strategies to align customer success with business goals and unlock new streams of value.'
         },
@@ -361,14 +361,14 @@ const AgendaPage = () => {
           id: 'capital-productivity',
           track: 'productivity',
           title: 'How Capital Can Improve Productivity',
-          speaker: 'Ryan Silvestre',
+          speaker: 'Dominick Valdes',
           description: 'Strategic investment in resources, technology, and people to drive measurable efficiency gains.',
           fullDescription: 'This presentation explores how strategic investment in resources, technology, and people can drive measurable efficiency gains. The session provides practical guidance on allocating capital to optimize workflows, empower teams, and maximize return on investment. Attendees will learn actionable methods to turn financial resources into tangible productivity improvements.'
         },
         {
           id: 'cyber-recommendations',
           track: 'cybersecurity',
-          title: 'Top 10 Cyber Security recommendations for Businesses Large and Small',
+          title: 'Top 10 Cybersecurity recommendations for Businesses Large and Small',
           speaker: 'Carl Mazzanti',
           description: 'Essential guidance for protecting organizations against today\'s evolving digital threats.',
           fullDescription: 'This talk delivers essential guidance for protecting organizations against today\'s evolving digital threats. The talk outlines practical, high-impact strategies that can be applied by companies of any size to strengthen security and reduce risk. Attendees will learn actionable steps to safeguard their operations and build a more resilient cyber posture.'
@@ -396,12 +396,12 @@ const AgendaPage = () => {
           fullDescription: 'In this exploration, you\'ll learn proven strategies for expanding business operations efficiently while keeping costs under control. The talk highlights practical approaches to streamlining processes, leveraging technology, and optimizing resources for sustainable growth. Attendees will leave with a clear framework for scaling their business without unnecessary complexity or expense.'
         },
         {
-          id: 'it-bottlenecks',
+          id: 'moving-to-cloud',
           track: 'productivity',
-          title: 'Eliminating IT Bottlenecks: How 24/7 Monitoring Supercharges Productivity',
-          speaker: 'Nirvan Ramoutar',
-          description: 'Round-the-clock network monitoring to eliminate IT slowdowns and reduce downtime.',
-          fullDescription: 'Learn how round-the-clock network monitoring can eliminate common IT slowdowns, reduce downtime, and free your team to focus on what matters most. This session will explore practical tools and strategies that small businesses can implement to boost efficiency, enhance security, and keep operations running smoothly, day and night.'
+          title: 'Moving to the Cloud',
+          speaker: 'The Crancer Group',
+          description: 'Strategic approach to cloud migration with practical guidance for small and medium businesses.',
+          fullDescription: 'Discover the strategic benefits and practical considerations of moving your business operations to the cloud. The Crancer Group will guide you through the essential steps, from planning and assessment to implementation and optimization. Learn how cloud migration can reduce costs, improve scalability, enhance security, and provide your team with greater flexibility. This session offers actionable insights to help you make informed decisions about your cloud journey and avoid common pitfalls.'
         },
         {
           id: 'video-ai',
@@ -416,11 +416,11 @@ const AgendaPage = () => {
     {
       time: '4:00 PM - 4:30 PM',
       type: 'special',
-      title: 'Closing Remarks & Next Steps',
-      description: 'Conference wrap-up and action planning'
+      title: 'Closing Remarks',
+      description: 'Conference wrap-up and raffle winner announcement'
     },
     {
-      time: '5:30 PM - 7:30 PM',
+      time: '5:00 PM - 8:00 PM',
       type: 'special',
       title: 'Networking Dinner',
       description: 'Cocktails, appetizers, and continued networking'

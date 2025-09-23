@@ -55,17 +55,18 @@ const SpeakersPage = () => {
     {
       id: 'jack-alexy',
       name: 'Jack Alexy',
-      title: 'Olympic Gold Medalist & Student Athlete',
+      title: 'Olympic Gold & Silver Medalist',
       company: 'Team USA / UC Berkeley',
-      bio: 'Gold medal-winning swimmer for Team USA who swims collegiately for the University of California, Berkeley. Jack brings unique insights on excellence, performance, and achieving goals under pressure.',
-      fullBio: 'Jack Alexy is a gold medal-winning swimmer for Team USA and current student athlete at the University of California, Berkeley. From Morristown, NJ, Jack comes from a long line of athletes - his mother played for Notre Dame and his grandfather was a professional basketball player with the Detroit Pistons. His experience in high-performance athletics provides valuable insights into goal setting, resilience, and achieving excellence in competitive environments.',
-      expertise: ['High Performance', 'Goal Achievement', 'Resilience', 'Team Leadership'],
+      bio: 'Olympic Gold & Silver Medalist for Team USA who swims collegiately for the University of California, Berkeley. Jack brings unique insights on excellence, performance, and achieving goals under pressure.',
+      fullBio: 'Jack Alexy is an Olympic Gold & Silver Medalist for Team USA and current student athlete at the University of California, Berkeley. As a World Champion & Multi-Time Medalist for Team USA, NCAA Silver Medalist & National Champion with Cal, and Junior World Champion for Team USA, Jack brings exceptional insights into high-performance athletics. From Morristown, NJ, Jack comes from a long line of athletes - his mother played for Notre Dame and his grandfather was a professional basketball player with the Detroit Pistons. His experience as an Expert in Performance Optimization provides valuable insights into goal setting, resilience, and achieving excellence in competitive environments.',
+      expertise: ['High Performance', 'Goal Achievement', 'Resilience', 'Team Leadership', 'Performance Optimization'],
       sessions: ['Keynote: Excellence Under Pressure'],
       achievements: [
-        'Olympic Gold Medalist for Team USA',
-        'UC Berkeley collegiate swimmer',
-        'From athletic family legacy',
-        'Expert in performance optimization'
+        'Olympic Gold & Silver Medalist for Team USA',
+        'World Champion & Multi-Time Medalist for Team USA',
+        'NCAA Silver Medalist & National Champion with Cal',
+        'Junior World Champion for Team USA',
+        'Expert in Performance Optimization'
       ],
       quote: "Excellence isn't a destination—it's a daily commitment to being better than yesterday.",
       image: '/susan.jpg'
@@ -75,15 +76,16 @@ const SpeakersPage = () => {
       name: 'Jennifer S. Mazzanti',
       title: 'Co-Founder & CEO',
       company: 'eMazzanti Technologies',
-      bio: 'Co-Founder and CEO of eMazzanti Technologies, a Hoboken IT consultancy and MSP recognized for cutting-edge solutions and client-centric innovation. Named a Leader in Digital Technology by NJBIZ in 2024.',
-      fullBio: 'Jennifer S. Mazzanti is the Co-Founder and CEO of eMazzanti Technologies, a Hoboken IT consultancy and MSP recognized for cutting-edge solutions and client-centric innovation. Under her leadership, eMazzanti has grown into a nationally acclaimed firm, recognized for excellence in cybersecurity, cloud services, and digital transformation. A graduate of NYU, Jennifer\'s technical acumen combined with visionary leadership, steering her company to become a trusted advisor for businesses. In 2024, Jennifer was named a Leader in Digital Technology by NJBIZ, recognizing her contributions to innovation and excellence in client and employee service. She is a mentor and advocate for emerging entrepreneurs, sharing insights on scaling businesses, and building resilient teams.',
-      expertise: ['Entrepreneurship', 'Digital Transformation', 'Cybersecurity', 'Business Leadership'],
+      bio: 'Co-Founder and CEO of eMazzanti Technologies, a nationally acclaimed IT consultancy. Named Leader in Digital Technology by NJBIZ (2024) and 9× Inc. 5000 Honoree, recognized among the fastest-growing private companies.',
+      fullBio: 'Jennifer S. Mazzanti is the Co-Founder and CEO of eMazzanti Technologies, a nationally acclaimed IT consultancy and MSP recognized for cutting-edge solutions and client-centric innovation. Under her leadership, eMazzanti has grown into a nationally acclaimed firm, recognized for excellence in cybersecurity, cloud services, and digital transformation. A graduate of NYU, Jennifer\'s technical acumen combined with visionary leadership has led her company to become a trusted advisor for businesses. She is a 9× Inc. 5000 Honoree, recognized among the fastest-growing private companies, and a Multi-Time Award Winner including Microsoft Partner of the Year (4×) and WatchGuard Partner of the Year (5×). Jennifer has led global expansion across North America, Europe, and Asia, with a strong focus on cybersecurity and compliance. In 2024, Jennifer was named a Leader in Digital Technology by NJBIZ, recognizing her contributions to innovation and excellence in client and employee service. She is a mentor and advocate for emerging entrepreneurs, sharing insights on scaling businesses, and building resilient teams.',
+      expertise: ['Entrepreneurship', 'Digital Transformation', 'Cybersecurity', 'Business Leadership', 'Global Expansion'],
       sessions: ['Keynote: Building & Scaling Technology Businesses'],
       achievements: [
-        'Co-Founder and CEO of eMazzanti Technologies',
+        'Co-Founder & CEO of eMazzanti Technologies, a nationally acclaimed IT consultancy',
         'Named Leader in Digital Technology by NJBIZ (2024)',
-        'NYU Graduate',
-        'Nationally acclaimed IT consultancy leader'
+        '9× Inc. 5000 Honoree, recognized among the fastest-growing private companies',
+        'Multi-Time Award Winner -- Microsoft Partner of the Year (4×), WatchGuard Partner of the Year (5×)',
+        'Led global expansion across North America, Europe, and Asia, with a strong focus on cybersecurity and compliance'
       ],
       quote: "Innovation isn't just about technology—it's about transforming possibilities into realities for our clients.",
       image: '/Jennifer Mazzanti 2024_300dpiRGB1.jpg'

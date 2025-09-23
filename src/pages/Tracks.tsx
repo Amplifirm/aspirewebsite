@@ -77,7 +77,7 @@ const TracksPage = () => {
       sessions: [
         {
           id: 'fc-motown',
-          title: "How the Little Guy can Cucceed in Business and Sport: FC Motown",
+          title: "How the little guy can succeed in business and sports: FC Motown",
           speaker: "Dan Karosen",
           time: "10:25 AM - 10:50 AM",
           description: "Discover how FC Motown rose from local play to NPSL National Championship through bold leadership and vision.",
@@ -94,7 +94,7 @@ const TracksPage = () => {
         {
           id: 'customer-success',
           title: "How Customer Success Can Supercharge Your Revenue",
-          speaker: "Brinda Vani",
+          speaker: "Brindavani Pathuri",
           time: "11:30 AM - 11:55 AM",
           description: "How building stronger customer relationships directly fuels growth and retention.",
           fullDescription: "Explore how building stronger customer relationships directly fuels growth and retention. Drawing on real-world lessons from the field, the speaker highlights how proactive support and technical guidance translate into measurable revenue impact. Attendees will walk away with practical strategies to align customer success with business goals and unlock new streams of value."
@@ -242,18 +242,18 @@ const TracksPage = () => {
         {
           id: 'capital-productivity',
           title: "How Capital Can Improve Productivity",
-          speaker: "Ryan Silvestre",
+          speaker: "Dominick Valdes",
           time: "2:00 PM - 2:50 PM",
           description: "Strategic investment in resources, technology, and people to drive measurable efficiency gains.",
           fullDescription: "This presentation explores how strategic investment in resources, technology, and people can drive measurable efficiency gains. The session provides practical guidance on allocating capital to optimize workflows, empower teams, and maximize return on investment. Attendees will learn actionable methods to turn financial resources into tangible productivity improvements."
         },
         {
-          id: 'it-bottlenecks',
-          title: "Eliminating IT Bottlenecks: How 24/7 Monitoring Supercharges Productivity",
-          speaker: "Nirvan Ramoutar",
+          id: 'moving-to-cloud',
+          title: "Moving to the Cloud",
+          speaker: "The Crancer Group",
           time: "3:00 PM - 3:50 PM",
-          description: "Round-the-clock network monitoring to eliminate IT slowdowns and reduce downtime.",
-          fullDescription: "Learn how round-the-clock network monitoring can eliminate common IT slowdowns, reduce downtime, and free your team to focus on what matters most. This session will explore practical tools and strategies that small businesses can implement to boost efficiency, enhance security, and keep operations running smoothly, day and night."
+          description: "Strategic approach to cloud migration with practical guidance for small and medium businesses.",
+          fullDescription: "Discover the strategic benefits and practical considerations of moving your business operations to the cloud. The Crancer Group will guide you through the essential steps, from planning and assessment to implementation and optimization. Learn how cloud migration can reduce costs, improve scalability, enhance security, and provide your team with greater flexibility. This session offers actionable insights to help you make informed decisions about your cloud journey and avoid common pitfalls."
         }
       ],
       outcomes: [
@@ -274,8 +274,8 @@ const TracksPage = () => {
       keyTopics: ["Ransomware Prevention", "Data Protection", "Security Innovation", "Threat Intelligence"],
       sessions: [
         {
-          id: 'ai-security-threats',
-          title: "Latest AI Security Threats",
+          id: 'ai-threat-defense',
+          title: "From Alerts to Action: AI-Powered Threat Defense",
           speaker: "Scott Williamson",
           time: "10:25 AM - 10:50 AM",
           description: "Latest update on evolving AI-based threats and how to protect SMBs successfully.",
@@ -307,7 +307,7 @@ const TracksPage = () => {
         },
         {
           id: 'cyber-recommendations',
-          title: "Top 10 Cyber Security recommendations for Businesses Large and Small",
+          title: "Top 10 Cybersecurity recommendations for Businesses Large and Small",
           speaker: "Carl Mazzanti",
           time: "2:00 PM - 2:50 PM",
           description: "Essential guidance for protecting organizations against today's evolving digital threats.",

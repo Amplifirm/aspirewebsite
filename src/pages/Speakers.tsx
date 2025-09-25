@@ -136,7 +136,7 @@ const SpeakersPage = () => {
     },
     {
       id: 'brinda-vani',
-      name: 'Brinda Vani',
+      name: 'Brindavani Pathuri',
       title: 'Field Network Engineer',
       company: 'eMazzanti Technologies',
       bio: 'Field Network Engineer with a Master\'s in Computer Science from Pace University. She specializes in network security and cloud infrastructure, with deep expertise in WatchGuard Cloud.',
@@ -217,6 +217,52 @@ const SpeakersPage = () => {
       ],
       quote: "Technology should be your biggest cost-saver, not your biggest expense.",
       image: '/Image.jpg'
+    },
+    
+    {
+      id: 'deep-ranipa-expenses',
+      name: 'Deep Ranipa',
+      title: 'Project Manager & Sr. Technical Solutions Consultant',
+      company: 'eMazzanti Technologies',
+      bio: 'Accomplished Project Manager and Senior Technical Solutions Consultant with a solid foundation in analytics and mechanical engineering. MBA in Analytics from Stevens Institute of Technology.',
+      fullBio: 'Deep Ranipa is an accomplished Project Manager and Senior Technical Solutions Consultant with a solid foundation in analytics and mechanical engineering. He holds an MBA in Analytics from Stevens Institute of Technology, equipping him with expertise in business strategy, marketing analytics, and project management. His unique blend of technical and strategic insight empowers organizations to build scalable IT strategies and adopt AI solutions with confidence and clarity.',
+      expertise: ['Project Management', 'Analytics', 'Business Strategy', 'Technical Solutions'],
+      sessions: [
+        'Creating an IT Strategy with Microsoft that Works for your Business',
+        'How to Embrace AI without Growing Pains'
+      ],
+      track: 'expenses',
+      achievements: [
+        'MBA in Analytics from Stevens Institute',
+        'Senior Technical Solutions Consultant',
+        'Expert in business strategy',
+        'Project management specialist'
+      ],
+      quote: "The right analytics strategy turns data into competitive advantage.",
+      image: '/deepranipa.jpg'
+    },
+
+    {
+      id: 'bryan-antepara-expenses',
+      name: 'Bryan Antepara',
+      title: 'Cloud Engineer',
+      company: 'eMazzanti Technologies',
+      bio: 'Seasoned Cloud Engineer with a proven history in the information technology and services industry. He brings deep expertise in Office 365 cloud solutions, business processes, and strong program and project management experience.',
+      fullBio: 'Bryan Antepara is a seasoned Cloud Engineer with a proven history in the information technology and services industry. He brings deep expertise in Office 365 cloud solutions, business processes, Internet Information Services (IIS), Microsoft Office Suite, Exchange Online, SharePoint Online, and Customer Service, backed by strong program and project management experience. His insights help organizations simplify operations, reduce costs, and harness cloud technologies to drive smarter business growth.',
+      expertise: ['Office 365', 'Cloud Solutions', 'Business Processes', 'Project Management'],
+      sessions: [
+        'AI Readiness Assessment',
+        'The e365 Advantage: Streamlined Services for Small Business Growth'
+      ],
+      track: 'expenses',
+      achievements: [
+        'Expert in Office 365 cloud solutions',
+        'Skilled in business process optimization',
+        'Strong project management background',
+        'Microsoft technologies specialist'
+      ],
+      quote: "The cloud isn't just a technology—it's a business transformation platform.",
+      image: '/bryanantepara.jpg'
     },
     {
       id: 'maria-scarmardo',
@@ -354,8 +400,26 @@ const SpeakersPage = () => {
       quote: "Education is the bridge between where business is today and where it needs to be tomorrow.",
       image: '/oyatukelpic.jpg'
     },
-    // Note: Dominick Valdes and The Crancer Group are mentioned in the edits but not in the original data
-    // They would need to be added with their complete speaker information
+    {
+      id: 'dominick-valdes',
+      name: 'Dominick Valdes',
+      title: 'Vice President',
+      company: 'New Concepts Capital Consulting',
+      bio: 'Seasoned financial services executive with over 25 years of experience in commercial lending, private banking, and wealth management. Advises business owners on tailored financing strategies and growth opportunities.',
+      fullBio: 'Dominick Valdes is a seasoned financial services executive with over 25 years of experience in commercial lending, private banking, and wealth management. As Vice President at New Concepts Capital Consulting, he advises business owners on tailored financing strategies, cash flow solutions, and long-term growth opportunities. His extensive background in financial services provides valuable insights into capital acquisition, business financing, and strategic financial planning for companies at various stages of growth.',
+      expertise: ['Commercial Lending', 'Private Banking', 'Wealth Management', 'Business Financing', 'Cash Flow Solutions'],
+      sessions: ['Strategic Business Financing and Capital Solutions'],
+      track: 'productivity',
+      achievements: [
+        '25+ years in financial services',
+        'Vice President at New Concepts Capital Consulting',
+        'Expert in commercial lending and private banking',
+        'Specialist in tailored financing strategies',
+        'Advisor for business growth opportunities'
+      ],
+      quote: "The right financing strategy can transform a business vision into sustainable growth reality.",
+      image: 'https://media.licdn.com/dms/image/v2/D5603AQGxFwQ49LwSlQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1664817747070?e=2147483647&v=beta&t=LmWyMyOgNIxNaa-f6NFzKuFkUvFT7eS6cfUQgYq3bjE'
+    },
 
     // Enhance Cybersecurity Track (5 speakers)
     {
@@ -376,6 +440,46 @@ const SpeakersPage = () => {
       ],
       quote: "The best cybersecurity strategy is education paired with the right technology.",
       image: '/scottwilliamsonpic.jpg'
+    },
+
+    {
+      id: 'carl-mazzanti-cybersecurity',
+      name: 'Carl Mazzanti',
+      title: 'Co-Founder & President',
+      company: 'eMazzanti Technologies',
+      bio: 'Co-Founder and President of eMazzanti Technologies, Microsoft\'s four time Partner of the Year and premier IT consulting service managing over 400 active accounts.',
+      fullBio: 'Carl Mazzanti is the Co-Founder and President of eMazzanti Technologies, Microsoft\'s four time Partner of the Year and one of the premier IT consulting services for businesses throughout the New York metropolitan area and internationally. He manages over 400 active accounts ranging from professional services firms to high-end global retailers, bringing deep expertise in technology strategy and business growth.',
+      expertise: ['IT Consulting', 'Business Strategy', 'Technology Leadership', 'Microsoft Solutions'],
+      sessions: ['Building Technology Infrastructure for Scale'],
+      track: 'cybersecurity',
+      achievements: [
+        'Co-Founded eMazzanti Technologies',
+        'Microsoft Partner of the Year (4x)',
+        'Manages 400+ active client accounts',
+        'Leading IT consultant in NYC metro area'
+      ],
+      quote: "Technology should amplify your business vision, not complicate it.",
+      image: '/carlmazzanti.jpg'
+    },
+
+    {
+      id: 'john-logan-cybersecurity',
+      name: 'John Logan',
+      title: 'Senior Field Engineer & Manager-on-Duty',
+      company: 'eMazzanti Technologies',
+      bio: 'Senior Field Engineer and Manager-on-Duty at eMazzanti Technologies, as well as a member of the Information Security Team. Experienced network engineer with strong foundation in critical thinking.',
+      fullBio: 'John is a Senior Field Engineer and Manager-on-Duty at eMazzanti Technologies, as well as a member of the Information Security Team. He is an experienced network engineer with a strong foundation in critical thinking and problem solving, bringing practical expertise to complex technical challenges. His approach helps organizations strengthen their security posture through hands-on best practices and real-world solutions that enhance system resilience and operational confidence.',
+      expertise: ['Field Engineering', 'Network Engineering', 'Information Security', 'Technical Problem Solving'],
+      sessions: ['Field Engineering Best Practices for Security'],
+      track: 'cybersecurity',
+      achievements: [
+        'Senior Field Engineer at eMazzanti',
+        'Information Security Team member',
+        'Manager-on-Duty responsibilities',
+        'Expert in critical thinking and problem solving'
+      ],
+      quote: "The best solutions come from understanding both the technology and the people who use it.",
+      image: '/johnloganpic.jpg'
     },
     {
       id: 'scott-bennet',
@@ -417,7 +521,27 @@ const SpeakersPage = () => {
     }
   ];
 
-  const allSpeakers: Speaker[] = [...keynoteSpeeakers, ...trackSpeakers];
+  // Create deduplicated speakers list for "All Speakers" view
+  const createDeduplicatedSpeakers = (): Speaker[] => {
+    const seenSpeakers = new Map<string, Speaker>();
+    
+    // Add keynote speakers first (they have priority)
+    keynoteSpeeakers.forEach(speaker => {
+      seenSpeakers.set(speaker.name.toLowerCase(), speaker);
+    });
+    
+    // Add track speakers, but skip if we've already seen this speaker by name
+    trackSpeakers.forEach(speaker => {
+      const speakerKey = speaker.name.toLowerCase();
+      if (!seenSpeakers.has(speakerKey)) {
+        seenSpeakers.set(speakerKey, speaker);
+      }
+    });
+    
+    return Array.from(seenSpeakers.values());
+  };
+
+  const allSpeakers: Speaker[] = createDeduplicatedSpeakers();
 
   const categories: Category[] = [
     { id: 'all', label: 'All Speakers', count: allSpeakers.length },

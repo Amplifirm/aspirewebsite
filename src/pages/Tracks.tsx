@@ -251,10 +251,10 @@ const TracksPage = () => {
         {
           id: 'moving-to-cloud',
           title: "Moving to the Cloud",
-          speaker: "The Crancer Group",
+          speaker: "eMazzanti Technologies",
           time: "3:00 PM - 3:50 PM",
           description: "Strategic approach to cloud migration with practical guidance for small and medium businesses.",
-          fullDescription: "Discover the strategic benefits and practical considerations of moving your business operations to the cloud. The Crancer Group will guide you through the essential steps, from planning and assessment to implementation and optimization. Learn how cloud migration can reduce costs, improve scalability, enhance security, and provide your team with greater flexibility. This session offers actionable insights to help you make informed decisions about your cloud journey and avoid common pitfalls."
+          fullDescription: "Discover the strategic benefits and practical considerations of moving your business operations to the cloud. We will guide you through the essential steps, from planning and assessment to implementation and optimization. Learn how cloud migration can reduce costs, improve scalability, enhance security, and provide your team with greater flexibility. This session offers actionable insights to help you make informed decisions about your cloud journey and avoid common pitfalls."
         }
       ],
       outcomes: [
@@ -386,7 +386,7 @@ const TracksPage = () => {
                     >
                       {track.icon}
                     </div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">{track.title}</h3>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">{track.title}</h3>
                     <p className="text-gray-600 text-sm mb-4 leading-relaxed">{track.description}</p>
                     <div className="flex items-center justify-center space-x-2 text-gray-500 text-sm">
                       <Clock className="w-4 h-4" />

@@ -17,7 +17,7 @@ const ProfessionalFooter = () => {
         <div className="max-w-7xl mx-auto px-8 py-24">
           <div className="text-center mb-16">
           <h2 className="text-5xl font-light text-gray-900 mb-8 font-roboto">
-  Historical Conference <span 
+  Past Conference <span 
     className="font-light bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent"
     style={{
       background: 'linear-gradient(135deg, #3C1AF9, #B61BFD)',

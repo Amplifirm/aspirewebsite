@@ -399,9 +399,9 @@ const AgendaPage = () => {
           id: 'moving-to-cloud',
           track: 'productivity',
           title: 'Moving to the Cloud',
-          speaker: 'The Crancer Group',
+          speaker: 'eMazzanti Technologies',
           description: 'Strategic approach to cloud migration with practical guidance for small and medium businesses.',
-          fullDescription: 'Discover the strategic benefits and practical considerations of moving your business operations to the cloud. The Crancer Group will guide you through the essential steps, from planning and assessment to implementation and optimization. Learn how cloud migration can reduce costs, improve scalability, enhance security, and provide your team with greater flexibility. This session offers actionable insights to help you make informed decisions about your cloud journey and avoid common pitfalls.'
+          fullDescription: 'Discover the strategic benefits and practical considerations of moving your business operations to the cloud. We will guide you through the essential steps, from planning and assessment to implementation and optimization. Learn how cloud migration can reduce costs, improve scalability, enhance security, and provide your team with greater flexibility. This session offers actionable insights to help you make informed decisions about your cloud journey and avoid common pitfalls.'
         },
         {
           id: 'video-ai',

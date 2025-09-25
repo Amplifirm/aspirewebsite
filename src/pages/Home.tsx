@@ -197,7 +197,7 @@ const HomePage = () => {
         },
         {
           title: "Moving to the Cloud",
-          speaker: "The Crancer Group",
+          speaker: "eMazzanti Technologies",
           time: "3:00 PM - 3:50 PM",
           description: "Strategic approach to cloud migration with practical guidance for small and medium businesses."
         }

@@ -169,9 +169,9 @@ const AgendaPage = () => {
     {
       time: '9:30 AM - 10:15 AM',
       type: 'keynote',
-      title: 'KEYNOTE: Business Leadership Conversation',
+      title: 'KEYNOTE: A Conversation on Excellence, Innovation & Impact',
       speaker: 'Jack Alexy & Jennifer S. Mazzanti',
-      description: 'Industry leaders discuss resilience, decision-making, and leveraging technology for rapid business growth'
+      description: 'This inspiring session will explore how personal excellence and bold leadership translate into business success'
     },
     {
       time: '10:15 AM - 10:25 AM',
@@ -368,7 +368,7 @@ const AgendaPage = () => {
         {
           id: 'cyber-recommendations',
           track: 'cybersecurity',
-          title: 'Top 10 Cybersecurity recommendations for Businesses Large and Small',
+          title: 'Top 10 Cybersecurity Recommendations for Businesses Large and Small',
           speaker: 'Carl Mazzanti',
           description: 'Essential guidance for protecting organizations against today\'s evolving digital threats.',
           fullDescription: 'This talk delivers essential guidance for protecting organizations against today\'s evolving digital threats. The talk outlines practical, high-impact strategies that can be applied by companies of any size to strengthen security and reduce risk. Attendees will learn actionable steps to safeguard their operations and build a more resilient cyber posture.'

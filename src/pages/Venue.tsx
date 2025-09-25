@@ -26,8 +26,8 @@ const VenuePage = () => {
   const transportationOptions = [
     {
       icon: <Train className="w-5 h-5" />,
-      title: "Subway",
-      description: "Times Square-42nd Street station (Multiple lines: 1,2,3,7,N,Q,R,W,S)",
+      title: "Bus/Subway",
+      description: "Port Authority/Times Square-42nd Street Station (Multiple lines: 1,2,3,7,N,Q,R,W,S)",
       walkTime: "2 min walk"
     },
     {
@@ -45,7 +45,7 @@ const VenuePage = () => {
       sponsor: "Microsoft",
       sponsorLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/2560px-Microsoft_logo_%282012%29.svg.png",
       icon: <Coffee className="w-5 h-5" />,
-      description: "Network over premium breakfast provided by Microsoft"
+      description: "Network over breakfast provided by Microsoft"
     },
     {
       time: "12:00 PM - 1:00 PM", 
@@ -53,7 +53,7 @@ const VenuePage = () => {
       sponsor: "WatchGuard",
       sponsorLogo: "https://www.infinigate.com/wp-content/uploads/2023/04/WatchGuard_logo.svg",
       icon: <UtensilsCrossed className="w-5 h-5" />,
-      description: "Gourmet lunch and industry insights courtesy of WatchGuard"
+      description: "Lunch and industry insights courtesy of WatchGuard"
     },
     {
       time: "9:30 AM - 4:30 PM",
@@ -130,7 +130,7 @@ const VenuePage = () => {
                     className="px-8 py-4 bg-blue-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                   >
                     <div className="flex items-center justify-center space-x-2">
-                      <span>Reserve Your Seat</span>
+                      <span>Register Now</span>
                       <ArrowRight className="w-5 h-5" />
                     </div>
                   </button>

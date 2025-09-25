@@ -161,7 +161,7 @@ const ProfessionalFooter = () => {
                   </div>
                   <div>
                     <div className="font-medium">+1 (844) 360-4400</div>
-                    <div className="text-sm text-gray-400">Mon-Fri 9AM-6PM EST</div>
+                    <div className="text-sm text-gray-400"></div>
                   </div>
                 </a>
                 

@@ -4,9 +4,6 @@ import {
   CheckCircle, Clock,  Star, ChevronRight, X
 } from 'lucide-react';
 
-// Mock navigate function
-const navigate = (path: string) => console.log(`Navigate to: ${path}`);
-
 // Type definitions
 interface UserType {
   firstName: string;
@@ -63,6 +60,10 @@ const TracksPage = () => {
       setRegisteredSessions(parsedUser.registeredSessions || []);
     }
   }, []);
+
+  const handleNavigation = (path: string) => {
+    window.location.href = path;
+  };
 
   const tracks: Track[] = [
     {
@@ -307,7 +308,7 @@ const TracksPage = () => {
         },
         {
           id: 'cyber-recommendations',
-          title: "Top 10 Cybersecurity recommendations for Businesses Large and Small",
+          title: "Top 10 Cybersecurity Recommendations for Businesses Large and Small",
           speaker: "Carl Mazzanti",
           time: "2:00 PM - 2:50 PM",
           description: "Essential guidance for protecting organizations against today's evolving digital threats.",
@@ -362,7 +363,7 @@ const TracksPage = () => {
                   {registeredSessions.length} sessions in your schedule
                 </span>
                 <button
-                  onClick={() => navigate('/dashboard')}
+                  onClick={() => handleNavigation('/dashboard')}
                   className="text-blue-600 hover:text-blue-800 text-sm font-medium"
                 >
                   View Dashboard →
@@ -519,7 +520,7 @@ const TracksPage = () => {
                     <div className="text-center lg:text-right">
                       <div className="inline-block">
                         <button
-                          onClick={() => navigate('/agenda')}
+                          onClick={() => handleNavigation('/agenda')}
                           className="px-8 py-4 text-white font-medium rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center space-x-2"
                           style={{background: `linear-gradient(135deg, ${track.color}, ${track.color}dd)`}}
                         >
@@ -560,13 +561,13 @@ const TracksPage = () => {
             {user ? (
               <>
                 <button
-                  onClick={() => navigate('/dashboard')}
+                  onClick={() => handleNavigation('/dashboard')}
                   className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-lg rounded-xl hover:from-blue-700 hover:to-purple-700 transition-all duration-200 font-medium shadow-lg transform hover:scale-105"
                 >
                   View My Schedule
                 </button>
                 <button
-                  onClick={() => navigate('/agenda')}
+                  onClick={() => handleNavigation('/agenda')}
                   className="px-8 py-4 border-2 border-gray-300 text-gray-700 text-lg rounded-xl hover:border-gray-400 hover:bg-gray-50 transition-all duration-200 font-medium"
                 >
                   Full Agenda
@@ -575,13 +576,13 @@ const TracksPage = () => {
             ) : (
               <>
                 <button
-                  onClick={() => navigate('/register')}
+                  onClick={() => handleNavigation('/register')}
                   className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-lg rounded-xl hover:from-blue-700 hover:to-purple-700 transition-all duration-200 font-medium shadow-lg transform hover:scale-105"
                 >
                   Register Now - It's Free
                 </button>
                 <button
-                  onClick={() => navigate('/agenda')}
+                  onClick={() => handleNavigation('/agenda')}
                   className="px-8 py-4 border-2 border-gray-300 text-gray-700 text-lg rounded-xl hover:border-gray-400 hover:bg-gray-50 transition-all duration-200 font-medium"
                 >
                   View Full Agenda
@@ -684,7 +685,7 @@ const TracksPage = () => {
               <button 
                 className="flex-1 py-4 text-white font-medium rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 text-lg"
                 style={{background: `linear-gradient(135deg, ${selectedTrack.color}, ${selectedTrack.color}dd)`}}
-                onClick={() => navigate('/register')}
+                onClick={() => handleNavigation('/register')}
               >
                 Register for This Track
               </button>
@@ -743,7 +744,7 @@ const TracksPage = () => {
             <div className="flex space-x-4 pt-6 border-t border-gray-200 mt-8">
               <button 
                 className="flex-1 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 text-lg"
-                onClick={() => navigate('/register')}
+                onClick={() => handleNavigation('/register')}
               >
                 Register for This Session
               </button>

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { CheckCircle, Calendar, MapPin, Clock } from 'lucide-react';
+import { authService } from '../lib/supabase';
 
 interface FormData {
   firstName: string;
@@ -49,23 +50,28 @@ const Register = () => {
       return;
     }
 
-    // Simulate registration process
+    // Use real Supabase registration
     try {
-      // Mock API call delay
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      
-      // Store user data in localStorage for demo
-      localStorage.setItem('user', JSON.stringify({
+      const result = await authService.register({
         firstName: formData.firstName,
         lastName: formData.lastName,
         email: formData.email,
+        password: formData.password,
         company: formData.company,
         jobTitle: formData.jobTitle,
         phone: formData.phone
-      }));
-      
-      // Show confirmation popup
-      setShowConfirmation(true);
+      });
+
+      if (result.success && result.user) {
+        // Store user data in localStorage (now with proper ID from database)
+        localStorage.setItem('user', JSON.stringify(result.user));
+        console.log('Registration successful, user stored:', result.user);
+        
+        // Show confirmation popup
+        setShowConfirmation(true);
+      } else {
+        setError(result.error || 'Registration failed. Please try again.');
+      }
     } catch (err: any) {
       console.error('Registration error:', err);
       setError('Registration failed. Please try again.');
@@ -126,7 +132,7 @@ const Register = () => {
             </div>
           )}
 
-          <div onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit}>
             <div className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
@@ -253,15 +259,14 @@ const Register = () => {
               </div>
 
               <button
-                type="button"
-                onClick={handleSubmit}
+                type="submit"
                 disabled={loading}
                 className="w-full py-3 px-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 disabled:opacity-50"
               >
                 {loading ? 'Creating Account...' : 'Create Account'}
               </button>
             </div>
-          </div>
+          </form>
 
           <div className="mt-6 text-center">
             <p className="text-gray-600">

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { 
   User, Calendar, Clock, MapPin, TrendingUp, DollarSign, Zap, Shield, 
-  LogOut,  CheckCircle, Plus, Trash2, Users, Coffee
+ CheckCircle, Plus, Trash2, Users, Coffee
 } from 'lucide-react';
 import { authService } from '../lib/supabase';
 
@@ -95,11 +95,7 @@ const Dashboard = () => {
     loadUserData();
   }, [navigate]);
 
-  const handleLogout = (): void => {
-    localStorage.removeItem('user');
-    navigate('/');
-  };
-
+ 
   const removeSession = async (sessionId: string): Promise<void> => {
     try {
       setLoading(true);
@@ -158,39 +154,7 @@ const Dashboard = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white">
-      {/* Header */}
-      <header className="bg-white shadow-sm border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-4">
-              <img 
-                src="/Screenshot_2025-09-12_at_13.09.03-removebg-preview.png" 
-                alt="ASPIRE 2025" 
-                className="h-10 w-auto"
-              />
-              <div>
-                <h1 className="text-2xl font-light text-gray-900">My Dashboard</h1>
-                <p className="text-gray-600 text-sm">ASPIRE 2025 Conference</p>
-              </div>
-            </div>
-            
-            <div className="flex items-center space-x-4">
-              <button
-                onClick={() => navigate('/agenda')}
-                className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
-              >
-                Browse Sessions
-              </button>
-              <button
-                onClick={handleLogout}
-                className="p-2 text-gray-600 hover:text-gray-900 rounded-lg hover:bg-gray-100"
-              >
-                <LogOut className="w-5 h-5" />
-              </button>
-            </div>
-          </div>
-        </div>
-      </header>
+      
 
       <div className="max-w-7xl mx-auto px-6 py-8">
         {error && (

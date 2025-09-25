@@ -418,7 +418,7 @@ const SpeakersPage = () => {
         'Advisor for business growth opportunities'
       ],
       quote: "The right financing strategy can transform a business vision into sustainable growth reality.",
-      image: 'https://media.licdn.com/dms/image/v2/D5603AQGxFwQ49LwSlQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1664817747070?e=2147483647&v=beta&t=LmWyMyOgNIxNaa-f6NFzKuFkUvFT7eS6cfUQgYq3bjE'
+      image: '/Screenshot 2025-09-25 at 21.10.57.png'
     },
 
     // Enhance Cybersecurity Track (5 speakers)

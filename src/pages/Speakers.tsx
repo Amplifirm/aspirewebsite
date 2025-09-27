@@ -418,7 +418,7 @@ const SpeakersPage = () => {
         'Advisor for business growth opportunities'
       ],
       quote: "The right financing strategy can transform a business vision into sustainable growth reality.",
-      image: '/Screenshot 2025-09-25 at 21.10.57.png'
+      image: '/Dominick Valdes.png'
     },
 
     // Enhance Cybersecurity Track (5 speakers)

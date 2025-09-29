@@ -242,7 +242,7 @@ const TracksPage = () => {
         },
         {
           id: 'capital-productivity',
-          title: "How Capital Can Improve Productivity",
+          title: "Boosting Productivity Through the Right Capital Structure",
           speaker: "Dominick Valdes",
           time: "2:00 PM - 2:50 PM",
           description: "Strategic investment in resources, technology, and people to drive measurable efficiency gains.",
@@ -300,7 +300,7 @@ const TracksPage = () => {
         },
         {
           id: 'cyber-outlook',
-          title: "What is the Cybersecurity Outlook for 2025/26",
+          title: "War Stories from the SOC",
           speaker: "Scott Williamson",
           time: "1:00 PM - 1:50 PM",
           description: "Emerging threats, regulatory shifts, and defense strategies shaping the next two years.",

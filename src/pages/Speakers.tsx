@@ -69,7 +69,7 @@ const SpeakersPage = () => {
         'Expert in Performance Optimization'
       ],
       quote: "Excellence isn't a destination—it's a daily commitment to being better than yesterday.",
-      image: '/susan.jpg'
+      image: '/jack.jpg'
     },
     {
       id: 'jennifer-mazzanti',
@@ -408,7 +408,7 @@ const SpeakersPage = () => {
       bio: 'Seasoned financial services executive with over 25 years of experience in commercial lending, private banking, and wealth management. Advises business owners on tailored financing strategies and growth opportunities.',
       fullBio: 'Dominick Valdes is a seasoned financial services executive with over 25 years of experience in commercial lending, private banking, and wealth management. As Vice President at New Concepts Capital Consulting, he advises business owners on tailored financing strategies, cash flow solutions, and long-term growth opportunities. His extensive background in financial services provides valuable insights into capital acquisition, business financing, and strategic financial planning for companies at various stages of growth.',
       expertise: ['Commercial Lending', 'Private Banking', 'Wealth Management', 'Business Financing', 'Cash Flow Solutions'],
-      sessions: ['Strategic Business Financing and Capital Solutions'],
+      sessions: ['Boosting Productivity Through the Right Capital Structure'],
       track: 'productivity',
       achievements: [
         '25+ years in financial services',
@@ -430,7 +430,7 @@ const SpeakersPage = () => {
       bio: 'Director of Managed Services at WatchGuard Technologies with expertise in cloud computing, e-commerce, and network security. Passionate about educating SMBs about cybersecurity threats.',
       fullBio: 'Scott Williamson is the Director of Managed Services at WatchGuard Technologies. He is an expert in cloud computing, e-commerce, and network security with a passion for educating SMBs about cybersecurity threats. His frontline experience protecting thousands of organizations provides valuable insights into the evolving threat landscape and defense strategies.',
       expertise: ['Cybersecurity', 'Cloud Computing', 'Network Security', 'Threat Education'],
-      sessions: ['What is the Cybersecurity Outlook for 2025/26'],
+      sessions: ['War Stories from the SOC.'],
       track: 'cybersecurity',
       achievements: [
         'Director at WatchGuard Technologies',

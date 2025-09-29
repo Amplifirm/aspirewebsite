@@ -190,7 +190,7 @@ const HomePage = () => {
           description: "Why new tools don't always translate into efficiency and when tech truly drives performance."
         },
         {
-          title: "How Capital Can Improve Productivity",
+          title: "Boosting Productivity Through the Right Capital Structure",
           speaker: "Dominick Valdes",
           time: "2:00 PM - 2:50 PM",
           description: "Strategic investment in resources, technology, and people to drive measurable efficiency gains."
@@ -238,7 +238,7 @@ const HomePage = () => {
           description: "Comprehensive disaster recovery planning including all departments and customer communications."
         },
         {
-          title: "What is the Cybersecurity Outlook for 2025/26",
+          title: "War Stories from the SOC",
           speaker: "Scott Williamson",
           time: "1:00 PM - 1:50 PM",
           description: "Emerging threats, regulatory shifts, and defense strategies shaping the next two years."
@@ -283,7 +283,7 @@ const HomePage = () => {
         'Expert in Performance Optimization'
       ],
       quote: "Excellence isn't a destination—it's a daily commitment to being better than yesterday.",
-      image: '/susan.jpg'
+      image: '/jack.jpg'
     },
     {
       id: 'jennifer-mazzanti',

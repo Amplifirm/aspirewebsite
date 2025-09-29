@@ -330,7 +330,7 @@ const AgendaPage = () => {
         {
           id: 'cyber-outlook',
           track: 'cybersecurity',
-          title: 'What is the Cybersecurity Outlook for 2025/26',
+          title: 'War Stories from the SOC',
           speaker: 'Scott Williamson',
           description: 'Emerging threats, regulatory shifts, and defense strategies shaping the next two years.',
           fullDescription: 'This presentation offers an inside look at the emerging threats, regulatory shifts, and defense strategies shaping the next two years. Delivered by the Head of Managed Services at WatchGuard, the session blends frontline insights with strategic guidance on how businesses can stay ahead of evolving risks. Attendees will gain a clear picture of the cybersecurity landscape and actionable steps to strengthen resilience.'
@@ -360,7 +360,7 @@ const AgendaPage = () => {
         {
           id: 'capital-productivity',
           track: 'productivity',
-          title: 'How Capital Can Improve Productivity',
+          title: 'Boosting Productivity Through the Right Capital Structure',
           speaker: 'Dominick Valdes',
           description: 'Strategic investment in resources, technology, and people to drive measurable efficiency gains.',
           fullDescription: 'This presentation explores how strategic investment in resources, technology, and people can drive measurable efficiency gains. The session provides practical guidance on allocating capital to optimize workflows, empower teams, and maximize return on investment. Attendees will learn actionable methods to turn financial resources into tangible productivity improvements.'

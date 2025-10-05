@@ -156,7 +156,7 @@ const Dashboard = () => {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white">
       
 
-      <div className="max-w-7xl mx-auto px-6 py-8">
+      <div className="max-w-7xl mx-auto px-6 py-8 pt-24">
         {error && (
           <div className="bg-red-50 border border-red-200 rounded-xl p-4 mb-6">
             <p className="text-red-700 text-sm">{error}</p>
@@ -227,7 +227,7 @@ const Dashboard = () => {
                 <div className="flex items-center space-x-3">
                   <Users className="w-5 h-5 text-blue-500" />
                   <div>
-                    <div className="font-medium text-gray-900">Networking Reception</div>
+                    <div className="font-medium text-gray-900">VIP Networking Dinner</div>
                     <div className="text-gray-600 text-sm">5:30 PM - 7:30 PM</div>
                   </div>
                 </div>
@@ -314,6 +314,20 @@ const Dashboard = () => {
                       </div>
                     </div>
 
+                    {/* Networking Break */}
+                    <div className="bg-gradient-to-r from-cyan-50 to-blue-50 border border-cyan-200 rounded-xl p-4">
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center space-x-3">
+                          <Coffee className="w-5 h-5 text-cyan-600" />
+                          <div>
+                            <div className="font-medium text-gray-900">10:15 AM - 10:25 AM</div>
+                            <div className="text-gray-700">Networking Break</div>
+                          </div>
+                        </div>
+                        <CheckCircle className="w-5 h-5 text-cyan-600" />
+                      </div>
+                    </div>
+
                     {/* Session Slots */}
                     {scheduleSlots.map((slot, index) => (
                       <div 
@@ -384,14 +398,28 @@ const Dashboard = () => {
                       </div>
                     </div>
 
-                    {/* Reception */}
+                    {/* Closing Remarks */}
+                    <div className="bg-gradient-to-r from-indigo-50 to-purple-50 border border-indigo-200 rounded-xl p-4">
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center space-x-3">
+                          <Users className="w-5 h-5 text-indigo-600" />
+                          <div>
+                            <div className="font-medium text-gray-900">4:00 PM - 4:30 PM</div>
+                            <div className="text-gray-700">Closing Remarks</div>
+                          </div>
+                        </div>
+                        <CheckCircle className="w-5 h-5 text-indigo-600" />
+                      </div>
+                    </div>
+
+                    {/* VIP Networking Dinner */}
                     <div className="bg-gradient-to-r from-purple-50 to-pink-50 border border-purple-200 rounded-xl p-4">
                       <div className="flex items-center justify-between">
                         <div className="flex items-center space-x-3">
                           <Users className="w-5 h-5 text-purple-600" />
                           <div>
                             <div className="font-medium text-gray-900">5:30 PM - 7:30 PM</div>
-                            <div className="text-gray-700">Networking Reception</div>
+                            <div className="text-gray-700">VIP Networking Dinner</div>
                           </div>
                         </div>
                         <CheckCircle className="w-5 h-5 text-purple-600" />

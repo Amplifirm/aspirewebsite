@@ -97,7 +97,7 @@ const SpeakersPage = () => {
     {
       id: 'dan-karosen',
       name: 'Dan Karosen',
-      title: 'Co-Founder & CFO',
+      title: 'Co-Founder',
       company: 'FC Motown',
       bio: 'Co-founder of FC Motown and Certified Public Accountant with expertise in strategic planning, player recruitment, and financial management.',
       fullBio: 'Dan Karosen is the co-founder of FC Motown, involved with all aspects of the club including strategic planning, player recruitment, marketing and operations. He is a Certified Public Accountant and his experience demonstrates how strategic financial management and bold decision-making can help smaller organizations compete successfully.',
@@ -110,7 +110,7 @@ const SpeakersPage = () => {
         'Expert in competitive strategy'
       ],
       quote: "Success isn't about having the biggest budget—it's about having the biggest vision.",
-      image: '/dankarosen.jpg'
+      image: '/dankarosenfcmotown.jpg'
     },
     {
       id: 'bryan-antepara',
@@ -175,7 +175,7 @@ const SpeakersPage = () => {
     {
       id: 'deep-ranipa',
       name: 'Deep Ranipa',
-      title: 'Project Manager & Sr. Technical Solutions Consultant',
+      title: 'vCIO',
       company: 'eMazzanti Technologies',
       bio: 'Accomplished Project Manager and Senior Technical Solutions Consultant with a solid foundation in analytics and mechanical engineering. MBA in Analytics from Stevens Institute of Technology.',
       fullBio: 'Deep Ranipa is an accomplished Project Manager and Senior Technical Solutions Consultant with a solid foundation in analytics and mechanical engineering. He holds an MBA in Analytics from Stevens Institute of Technology, equipping him with expertise in business strategy, marketing analytics, and project management. His unique blend of technical and strategic insight empowers organizations to build scalable IT strategies and adopt AI solutions with confidence and clarity.',
@@ -199,7 +199,7 @@ const SpeakersPage = () => {
     {
       id: 'nirvan-ramoutar',
       name: 'Nirvan Ramoutar',
-      title: 'IT Consultant & Business Development',
+      title: 'Business Development Manager',
       company: 'eMazzanti Technologies / Liqui-Site',
       bio: 'IT Consultant focused on Business Development at eMazzanti Technologies and a member of the Liqui-Site team—a multi-award-winning web development and digital marketing firm.',
       fullBio: 'Nirvan Ramoutar is an IT Consultant focused on Business Development at eMazzanti Technologies and a member of the Liqui-Site team—a multi-award-winning web development and digital marketing firm dedicated to advancing nonprofit missions. His expertise spans IT consulting, business development, and digital marketing strategies, offering practical solutions that help organizations boost productivity, control costs, and scale with confidence.',
@@ -245,7 +245,7 @@ const SpeakersPage = () => {
     {
       id: 'bryan-antepara-expenses',
       name: 'Bryan Antepara',
-      title: 'Cloud Engineer',
+      title: 'Service Delivery Lead',
       company: 'eMazzanti Technologies',
       bio: 'Seasoned Cloud Engineer with a proven history in the information technology and services industry. He brings deep expertise in Office 365 cloud solutions, business processes, and strong program and project management experience.',
       fullBio: 'Bryan Antepara is a seasoned Cloud Engineer with a proven history in the information technology and services industry. He brings deep expertise in Office 365 cloud solutions, business processes, Internet Information Services (IIS), Microsoft Office Suite, Exchange Online, SharePoint Online, and Customer Service, backed by strong program and project management experience. His insights help organizations simplify operations, reduce costs, and harness cloud technologies to drive smarter business growth.',
@@ -267,7 +267,7 @@ const SpeakersPage = () => {
     {
       id: 'maria-scarmardo',
       name: 'Maria Scarmardo',
-      title: 'Owner',
+      title: 'Founder/CEO',
       company: 'Praxis Data Security',
       bio: 'Owner of Praxis Data Security, a firm that provides practical solutions and risk-based Governance, Risk, Compliance (GRC), and Privacy for medium-sized companies.',
       fullBio: 'Maria is the owner of Praxis Data Security, a firm that provides practical solutions and risk-based Governance, Risk, Compliance (GRC), and Privacy. They help medium-sized companies mitigate losses and position themselves for success in a complex cybersecurity environment. Maria provides actionable strategies for maintaining compliance while controlling costs in today\'s evolving risk landscape.',
@@ -346,7 +346,7 @@ const SpeakersPage = () => {
     {
       id: 'shiva-kumar',
       name: 'Shiva Kumar',
-      title: 'Senior Technical Support Engineer',
+      title: 'Solutions Architect',
       company: 'eMazzanti Technologies',
       bio: 'Senior Technical Support Engineer at eMazzanti Technologies, where he helps professional services organizations and financial professionals embrace AI and automation to enhance productivity.',
       fullBio: 'Shiva Kumar is a Senior Technical Support Engineer at eMazzanti Technologies, where he helps professional services organizations and financial professionals embrace AI and automation to enhance productivity and streamline operations. His expertise centers on practical implementation strategies that make emerging technologies accessible and effective for real-world business challenges, empowering teams to work smarter, faster, and more efficiently.',
@@ -365,7 +365,7 @@ const SpeakersPage = () => {
     {
       id: 'deepanshu-negi',
       name: 'Deepanshu Negi',
-      title: 'Business Intelligence & Analytics Specialist',
+      title: 'Business Process Engineer',
       company: 'eMazzanti Technologies',
       bio: 'Passionate about leveraging technology to drive business intelligence and analytics. With experience in IT roles, including as a Business Process Engineer, he has developed a strong foundation in tech stacks.',
       fullBio: 'Deepanshu is passionate about leveraging technology to drive business intelligence and analytics. With experience in IT roles, including as a Business Process Engineer, and through personal and academic projects, he has developed a strong foundation in tech stacks, finance, programming languages, and industry best practices. His approach helps organizations turn data into actionable insights that support smarter decision-making and operational efficiency.',
@@ -420,6 +420,48 @@ const SpeakersPage = () => {
       quote: "The right financing strategy can transform a business vision into sustainable growth reality.",
       image: '/Dominick Valdes.png'
     },
+
+    {
+      id: 'sherman-crancer',
+      name: 'Sherman Crancer',
+      title: 'Microsoft Partner Development Manager', // Update this when you get the official title
+      company: 'Microsoft',
+      bio: 'Sherman Crancer helps Microsoft partners accelerate growth and drive digital transformation. With deep expertise in Microsoft Azure and years of experience inside the Microsoft ecosystem, he has guided organizations across industries in leveraging cloud solutions to improve performance, scalability, and innovation.',
+      fullBio: 'Sherman Crancer helps Microsoft partners accelerate growth and drive digital transformation. With deep expertise in Microsoft Azure and years of experience inside the Microsoft ecosystem, he has guided organizations across industries in leveraging cloud solutions to improve performance, scalability, and innovation. His insights help businesses successfully navigate cloud migration and maximize their return on Microsoft technology investments.',
+      expertise: ['Microsoft Azure', 'Cloud Solutions', 'Digital Transformation', 'Partner Ecosystem', 'Cloud Migration'],
+      sessions: ['Moving to the Cloud'],
+      track: 'productivity',
+      achievements: [
+        'Microsoft partner development expert',
+        'Deep expertise in Microsoft Azure',
+        'Years of experience in Microsoft ecosystem',
+        'Specialist in cloud migration strategies'
+      ],
+      quote: "Cloud transformation is not just about technology—it's about reimagining how your business operates.",
+      image: '/Sherman Crancer.jpg'
+    },
+
+    {
+      id: 'ram-amoor',
+      name: 'Ram Amoor',
+      title: 'Senior Solutions and Functional Architect',
+      company: 'Sonata Software',
+      bio: 'Senior Solutions and Functional Architect with over 22 years of experience in ERP, Finance, and Database solutions. Expert in MS Dynamics 365/AX with strong finance and supply chain domain knowledge, bringing deep expertise in Business Intelligence and Data Warehousing.',
+      fullBio: 'MS Dynamics 365 F&O / AX 2012 Functional Solution architect, Lead Functional Consultant with 17 years of experience in Finance, Supply chain and Project operations and accounting - SQL DBA with 8+ years of experience - Expertise and strong understanding on Management Reporter, MS Power BI with in-depth data visualizations - Experienced with implementation of the ERP for multiple industry segments - Successfully implemented 15+ large and medium ERP projects - Has been an employee of Goldman Sachs, Microsoft in the professional career.',
+      expertise: ['MS Dynamics 365', 'ERP Solutions', 'Finance Management', 'Supply Chain', 'Business Intelligence', 'Data Warehousing'],
+      sessions: ['Unlocking Exceptional Profitability: How Top Firms Are Achieving Higher EBITDA Growth'],
+      track: 'productivity',
+      achievements: [
+        '22+ years in ERP/Finance/Database',
+        '17 years MS Dynamics 365/AX expertise',
+        'Dual Master\'s degrees in Computer Science and Finance',
+        'Experience with Goldman Sachs and major financial institutions',
+        'Solution Architect and Finance Functional Lead'
+      ],
+      quote: "Understanding business needs deeply is the foundation of every successful ERP implementation.",
+      image: '/Ram Photo.jpg'
+    },
+    
 
     // Enhance Cybersecurity Track (5 speakers)
     {
@@ -484,7 +526,7 @@ const SpeakersPage = () => {
     {
       id: 'scott-bennet',
       name: 'Scott Bennet',
-      title: 'Senior Network Engineer',
+      title: 'CTO',
       company: 'eMazzanti Technologies',
       bio: 'Senior Network Engineer and a member of the Information Security team, with extensive experience in designing, implementing, and maintaining secure network systems.',
       fullBio: 'Scott is a Senior Network Engineer and a member of the Information Security team, with extensive experience in designing, implementing, and maintaining secure network systems. He is proficient in a wide range of network security technologies, including firewalls, VPNs, IDS/IPS, and encryption. Scott holds a Bachelor of Science degree in Cybersecurity from a prestigious university recognized by the NSA and the Department of Homeland Security for excellence in cyber education. His expertise equips organizations with the tools and strategies needed to strengthen network defenses and stay ahead of evolving security threats.',

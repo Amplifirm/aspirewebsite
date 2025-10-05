@@ -210,11 +210,11 @@ const TracksPage = () => {
       sessions: [
         {
           id: 'cloud-migration',
-          title: "Navigating a Cloud Migration",
+          title: "Beyond Maintenance: IT as a Competitive Edge.",
           speaker: "John Logan",
           time: "10:25 AM - 10:50 AM",
           description: "Break down the cloud migration process into clear, actionable steps for small businesses.",
-          fullDescription: "For many small businesses, the cloud offers a smarter, more cost-effective way to operate—but the transition can feel daunting. This presentation will break down the process into clear, actionable steps, helping you understand what to expect and how to prepare. You'll walk away with practical guidance to avoid costly missteps and ensure your move to the cloud supports growth, efficiency, and long-term success."
+          fullDescription: "Discover how IT can move from a cost center to a competitive advantage. Learn practical ways to boost productivity, cut waste, and keep remote teams running smoothly with smart automation and cloud optimization."
         },
         {
           id: 'ebitda-growth',
@@ -251,7 +251,7 @@ const TracksPage = () => {
         {
           id: 'moving-to-cloud',
           title: "Moving to the Cloud",
-          speaker: "eMazzanti Technologies",
+          speaker: "Sherman Crancer",
           time: "3:00 PM - 3:50 PM",
           description: "Strategic approach to cloud migration with practical guidance for small and medium businesses.",
           fullDescription: "Discover the strategic benefits and practical considerations of moving your business operations to the cloud. We will guide you through the essential steps, from planning and assessment to implementation and optimization. Learn how cloud migration can reduce costs, improve scalability, enhance security, and provide your team with greater flexibility. This session offers actionable insights to help you make informed decisions about your cloud journey and avoid common pitfalls."

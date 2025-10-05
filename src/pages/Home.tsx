@@ -166,7 +166,7 @@ const HomePage = () => {
       keyTopics: ["Task Automation", "Remote Workflows", "Team Efficiency", "Digital Transformation"],
       sessions: [
         {
-          title: "Navigating a Cloud Migration",
+          title: "Beyond Maintenance: IT as a Competitive Edge.",
           speaker: "John Logan",
           time: "10:25 AM - 10:50 AM",
           description: "Break down the cloud migration process into clear, actionable steps for small businesses."
@@ -197,7 +197,7 @@ const HomePage = () => {
         },
         {
           title: "Moving to the Cloud",
-          speaker: "eMazzanti Technologies",
+          speaker: "Sherman Crancer",
           time: "3:00 PM - 3:50 PM",
           description: "Strategic approach to cloud migration with practical guidance for small and medium businesses."
         }

@@ -307,7 +307,7 @@ const Dashboard = () => {
                           <div>
                             <div className="font-medium text-gray-900">9:30 AM - 10:15 AM</div>
                             <div className="text-gray-700">KEYNOTE: Business Leadership Conversation</div>
-                            <div className="text-gray-600 text-sm">Jack Alexy & Paul Centenari</div>
+                            <div className="text-gray-600 text-sm">Jack Alexy &  Jennifer S. Mazzanti </div>
                           </div>
                         </div>
                         <CheckCircle className="w-5 h-5 text-purple-600" />

@@ -115,13 +115,14 @@ const SpeakersPage = () => {
     {
       id: 'bryan-antepara',
       name: 'Bryan Antepara',
-      title: 'Cloud Engineer',
+      title: 'Service Delivery Lead',
       company: 'eMazzanti Technologies',
       bio: 'Seasoned Cloud Engineer with a proven history in the information technology and services industry. He brings deep expertise in Office 365 cloud solutions, business processes, and strong program and project management experience.',
       fullBio: 'Bryan Antepara is a seasoned Cloud Engineer with a proven history in the information technology and services industry. He brings deep expertise in Office 365 cloud solutions, business processes, Internet Information Services (IIS), Microsoft Office Suite, Exchange Online, SharePoint Online, and Customer Service, backed by strong program and project management experience. His insights help organizations simplify operations, reduce costs, and harness cloud technologies to drive smarter business growth.',
       expertise: ['Office 365', 'Cloud Solutions', 'Business Processes', 'Project Management'],
       sessions: [
         'AI Readiness Assessment',
+        'Reduce your Telephone Operating Costs with Microsoft Teams',
         'The e365 Advantage: Streamlined Services for Small Business Growth'
       ],
       track: 'revenue',
@@ -205,8 +206,7 @@ const SpeakersPage = () => {
       fullBio: 'Nirvan Ramoutar is an IT Consultant focused on Business Development at eMazzanti Technologies and a member of the Liqui-Site team—a multi-award-winning web development and digital marketing firm dedicated to advancing nonprofit missions. His expertise spans IT consulting, business development, and digital marketing strategies, offering practical solutions that help organizations boost productivity, control costs, and scale with confidence.',
       expertise: ['IT Consulting', 'Business Development', 'Digital Marketing', 'Web Development'],
       sessions: [
-        'Do More with Less - How Technology is the Best Anti-Inflation Tool',
-        'Eliminating IT Bottlenecks: How 24/7 Monitoring Supercharges Productivity'
+        'Do More with Less - How Technology is the Best Anti-Inflation Tool'
       ],
       track: 'expenses',
       achievements: [
@@ -267,8 +267,8 @@ const SpeakersPage = () => {
     {
       id: 'maria-scarmardo',
       name: 'Maria Scarmardo',
-      title: 'Founder/CEO',
-      company: 'Praxis Data Security',
+      title: 'Service Delivery Lead',
+      company: 'eMazzanti Technologies',
       bio: 'Owner of Praxis Data Security, a firm that provides practical solutions and risk-based Governance, Risk, Compliance (GRC), and Privacy for medium-sized companies.',
       fullBio: 'Maria is the owner of Praxis Data Security, a firm that provides practical solutions and risk-based Governance, Risk, Compliance (GRC), and Privacy. They help medium-sized companies mitigate losses and position themselves for success in a complex cybersecurity environment. Maria provides actionable strategies for maintaining compliance while controlling costs in today\'s evolving risk landscape.',
       expertise: ['Cybersecurity', 'GRC', 'Data Privacy', 'Risk Management'],
@@ -311,7 +311,7 @@ const SpeakersPage = () => {
       bio: 'Co-Founder and President of eMazzanti Technologies, Microsoft\'s four time Partner of the Year and premier IT consulting service managing over 400 active accounts.',
       fullBio: 'Carl Mazzanti is the Co-Founder and President of eMazzanti Technologies, Microsoft\'s four time Partner of the Year and one of the premier IT consulting services for businesses throughout the New York metropolitan area and internationally. He manages over 400 active accounts ranging from professional services firms to high-end global retailers, bringing deep expertise in technology strategy and business growth.',
       expertise: ['IT Consulting', 'Business Strategy', 'Technology Leadership', 'Microsoft Solutions'],
-      sessions: ['Building Technology Infrastructure for Scale'],
+      sessions: ['eCare Network Management' ,'Top 10 Cybersecurity Recommendations for Businesses Large and Small' ,'The Scalability Playbook: Maximize Growth, Minimize Overhead'],
       track: 'expenses',
       achievements: [
         'Co-Founded eMazzanti Technologies',
@@ -360,7 +360,7 @@ const SpeakersPage = () => {
         'Productivity optimization leader'
       ],
       quote: "AI isn't about replacing people—it's about empowering them to do their best work.",
-      image: '/Shiva Kumar UN Pic.jpg'
+      image: '/Screenshot 2025-10-07 at 17.36.56.png'
     },
     {
       id: 'deepanshu-negi',
@@ -424,8 +424,8 @@ const SpeakersPage = () => {
     {
       id: 'sherman-crancer',
       name: 'Sherman Crancer',
-      title: 'Microsoft Partner Development Manager', // Update this when you get the official title
-      company: 'Microsoft',
+      title: 'Microsoft Expert', // Update this when you get the official title
+      company: 'eMazzanti Technologies',
       bio: 'Sherman Crancer helps Microsoft partners accelerate growth and drive digital transformation. With deep expertise in Microsoft Azure and years of experience inside the Microsoft ecosystem, he has guided organizations across industries in leveraging cloud solutions to improve performance, scalability, and innovation.',
       fullBio: 'Sherman Crancer helps Microsoft partners accelerate growth and drive digital transformation. With deep expertise in Microsoft Azure and years of experience inside the Microsoft ecosystem, he has guided organizations across industries in leveraging cloud solutions to improve performance, scalability, and innovation. His insights help businesses successfully navigate cloud migration and maximize their return on Microsoft technology investments.',
       expertise: ['Microsoft Azure', 'Cloud Solutions', 'Digital Transformation', 'Partner Ecosystem', 'Cloud Migration'],
@@ -445,7 +445,7 @@ const SpeakersPage = () => {
       id: 'ram-amoor',
       name: 'Ram Amoor',
       title: 'Senior Solutions and Functional Architect',
-      company: 'Sonata Software',
+      company: 'eMazzanti Technologies',
       bio: 'Senior Solutions and Functional Architect with over 22 years of experience in ERP, Finance, and Database solutions. Expert in MS Dynamics 365/AX with strong finance and supply chain domain knowledge, bringing deep expertise in Business Intelligence and Data Warehousing.',
       fullBio: 'MS Dynamics 365 F&O / AX 2012 Functional Solution architect, Lead Functional Consultant with 17 years of experience in Finance, Supply chain and Project operations and accounting - SQL DBA with 8+ years of experience - Expertise and strong understanding on Management Reporter, MS Power BI with in-depth data visualizations - Experienced with implementation of the ERP for multiple industry segments - Successfully implemented 15+ large and medium ERP projects - Has been an employee of Goldman Sachs, Microsoft in the professional career.',
       expertise: ['MS Dynamics 365', 'ERP Solutions', 'Finance Management', 'Supply Chain', 'Business Intelligence', 'Data Warehousing'],
@@ -472,7 +472,7 @@ const SpeakersPage = () => {
       bio: 'Director of Managed Services at WatchGuard Technologies with expertise in cloud computing, e-commerce, and network security. Passionate about educating SMBs about cybersecurity threats.',
       fullBio: 'Scott Williamson is the Director of Managed Services at WatchGuard Technologies. He is an expert in cloud computing, e-commerce, and network security with a passion for educating SMBs about cybersecurity threats. His frontline experience protecting thousands of organizations provides valuable insights into the evolving threat landscape and defense strategies.',
       expertise: ['Cybersecurity', 'Cloud Computing', 'Network Security', 'Threat Education'],
-      sessions: ['War Stories from the SOC.'],
+      sessions: ['War Stories from the SOC.', 'From Alerts to Action: AI-Powered Threat Defense'],
       track: 'cybersecurity',
       achievements: [
         'Director at WatchGuard Technologies',
@@ -492,7 +492,7 @@ const SpeakersPage = () => {
       bio: 'Co-Founder and President of eMazzanti Technologies, Microsoft\'s four time Partner of the Year and premier IT consulting service managing over 400 active accounts.',
       fullBio: 'Carl Mazzanti is the Co-Founder and President of eMazzanti Technologies, Microsoft\'s four time Partner of the Year and one of the premier IT consulting services for businesses throughout the New York metropolitan area and internationally. He manages over 400 active accounts ranging from professional services firms to high-end global retailers, bringing deep expertise in technology strategy and business growth.',
       expertise: ['IT Consulting', 'Business Strategy', 'Technology Leadership', 'Microsoft Solutions'],
-      sessions: ['Building Technology Infrastructure for Scale'],
+      sessions: ['eCare Network Management' ,'Top 10 Cybersecurity Recommendations for Businesses Large and Small' ,'The Scalability Playbook: Maximize Growth, Minimize Overhead'],
       track: 'cybersecurity',
       achievements: [
         'Co-Founded eMazzanti Technologies',
@@ -512,7 +512,7 @@ const SpeakersPage = () => {
       bio: 'Senior Field Engineer and Manager-on-Duty at eMazzanti Technologies, as well as a member of the Information Security Team. Experienced network engineer with strong foundation in critical thinking.',
       fullBio: 'John is a Senior Field Engineer and Manager-on-Duty at eMazzanti Technologies, as well as a member of the Information Security Team. He is an experienced network engineer with a strong foundation in critical thinking and problem solving, bringing practical expertise to complex technical challenges. His approach helps organizations strengthen their security posture through hands-on best practices and real-world solutions that enhance system resilience and operational confidence.',
       expertise: ['Field Engineering', 'Network Engineering', 'Information Security', 'Technical Problem Solving'],
-      sessions: ['Field Engineering Best Practices for Security'],
+      sessions: ['Beyond Maintenance: IT as a Competitive Edge','How to Keep Your Company Safe'],
       track: 'cybersecurity',
       achievements: [
         'Senior Field Engineer at eMazzanti',

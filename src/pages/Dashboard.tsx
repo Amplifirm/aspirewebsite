@@ -224,13 +224,7 @@ const Dashboard = () => {
                   </div>
                 </div>
                 
-                <div className="flex items-center space-x-3">
-                  <Users className="w-5 h-5 text-blue-500" />
-                  <div>
-                    <div className="font-medium text-gray-900">VIP Networking Dinner</div>
-                    <div className="text-gray-600 text-sm">5:30 PM - 7:30 PM</div>
-                  </div>
-                </div>
+                
               </div>
             </div>
 
@@ -328,8 +322,8 @@ const Dashboard = () => {
                       </div>
                     </div>
 
-                    {/* Session Slots */}
-                    {scheduleSlots.map((slot, index) => (
+                    {/* Morning Session Slots */}
+                    {scheduleSlots.slice(0, 3).map((slot, index) => (
                       <div 
                         key={index}
                         className={`border rounded-xl p-4 ${
@@ -398,6 +392,62 @@ const Dashboard = () => {
                       </div>
                     </div>
 
+                    {/* Afternoon Session Slots */}
+                    {scheduleSlots.slice(3).map((slot, index) => (
+                      <div 
+                        key={index + 3}
+                        className={`border rounded-xl p-4 ${
+                          slot.session 
+                            ? 'bg-blue-50 border-blue-200' 
+                            : 'bg-gray-50 border-gray-200 border-dashed'
+                        }`}
+                      >
+                        <div className="flex items-center justify-between">
+                          <div className="flex items-center space-x-3">
+                            <Clock className="w-5 h-5 text-gray-500" />
+                            <div className="flex-1">
+                              <div className="font-medium text-gray-900">{slot.time}</div>
+                              {slot.session ? (
+                                <div>
+                                  <div className="text-gray-700 font-medium">{slot.session.sessionTitle}</div>
+                                  <div className="flex items-center space-x-2 mt-1">
+                                    {getTrackInfo(slot.session.track || '').icon}
+                                    <span className="text-gray-600 text-sm">
+                                      {getTrackInfo(slot.session.track || '').name}
+                                    </span>
+                                  </div>
+                                </div>
+                              ) : (
+                                <div className="text-gray-500">No session selected</div>
+                              )}
+                            </div>
+                          </div>
+                          
+                          <div className="flex items-center space-x-2">
+                            {slot.session ? (
+                              <>
+                                <CheckCircle className="w-5 h-5 text-blue-600" />
+                                <button
+                                  onClick={() => removeSession(slot.session!.sessionId)}
+                                  disabled={loading}
+                                  className="p-1 text-red-500 hover:text-red-700 hover:bg-red-50 rounded disabled:opacity-50"
+                                >
+                                  <Trash2 className="w-4 h-4" />
+                                </button>
+                              </>
+                            ) : (
+                              <button
+                                onClick={() => navigate('/agenda')}
+                                className="px-3 py-1 text-blue-600 hover:text-blue-700 text-sm font-medium"
+                              >
+                                Select Session
+                              </button>
+                            )}
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+
                     {/* Closing Remarks */}
                     <div className="bg-gradient-to-r from-indigo-50 to-purple-50 border border-indigo-200 rounded-xl p-4">
                       <div className="flex items-center justify-between">
@@ -412,19 +462,7 @@ const Dashboard = () => {
                       </div>
                     </div>
 
-                    {/* VIP Networking Dinner */}
-                    <div className="bg-gradient-to-r from-purple-50 to-pink-50 border border-purple-200 rounded-xl p-4">
-                      <div className="flex items-center justify-between">
-                        <div className="flex items-center space-x-3">
-                          <Users className="w-5 h-5 text-purple-600" />
-                          <div>
-                            <div className="font-medium text-gray-900">5:30 PM - 7:30 PM</div>
-                            <div className="text-gray-700">VIP Networking Dinner</div>
-                          </div>
-                        </div>
-                        <CheckCircle className="w-5 h-5 text-purple-600" />
-                      </div>
-                    </div>
+                    
                   </div>
 
                   {/* Track Summary */}

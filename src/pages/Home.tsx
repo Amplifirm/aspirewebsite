@@ -173,7 +173,7 @@ const HomePage = () => {
         },
         {
           title: "Unlocking Exceptional Profitability: How Firms Are Achieving Higher EBITDA Growth",
-          speaker: "Shiva Kumar",
+          speaker: "Shiva Kumar and Ram Amoor",
           time: "11:00 AM - 11:25 AM", 
           description: "Dynamics 365 solutions for Finance, Accounting, and Supply Chain Management challenges."
         },

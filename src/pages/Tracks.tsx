@@ -219,7 +219,7 @@ const TracksPage = () => {
         {
           id: 'ebitda-growth',
           title: "Unlocking Exceptional Profitability: How Firms Are Achieving Higher EBITDA Growth",
-          speaker: "Shiva Kumar",
+          speaker: "Shiva Kumar and Ram Amoor",
           time: "11:00 AM - 11:25 AM", 
           description: "Dynamics 365 solutions for Finance, Accounting, and Supply Chain Management challenges.",
           fullDescription: "Spreadsheets can be incredibly powerful tools, but they do come with their own set of challenges and limitations. Dynamics 365 apps with tight integration with Excel offer efficient and user-friendly solutions to handle your Finance and Accounting, Supply Chain Management and project-based services automation processes more efficiently. If you are worried about the data integrity, security, compliance, and reporting, then this session is for you to attend and learn more about Dynamics 365 apps."

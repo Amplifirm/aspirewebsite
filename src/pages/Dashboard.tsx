@@ -219,7 +219,7 @@ const Dashboard = () => {
                 <div className="flex items-center space-x-3">
                   <MapPin className="w-5 h-5 text-blue-500" />
                   <div>
-                    <div className="font-medium text-gray-900">Microsoft Technology Center</div>
+                    <div className="font-medium text-gray-900">Microsoft Conference Center</div>
                     <div className="text-gray-600 text-sm">Times Square, NYC</div>
                   </div>
                 </div>

@@ -569,7 +569,7 @@ const AgendaPage = () => {
               </div>
               <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
                 <MapPin className="w-6 h-6 text-blue-500 mx-auto mb-2" />
-                <div className="font-semibold text-gray-900">Microsoft Technology Center</div>
+                <div className="font-semibold text-gray-900">Microsoft Conference Center</div>
                 <div className="text-gray-600 text-sm">Times Square, NYC</div>
               </div>
               <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">

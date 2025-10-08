@@ -88,7 +88,7 @@ const Register = () => {
   const generateCalendarLink = (type: 'google' | 'outlook'): string => {
     const eventDetails = {
       title: 'ASPIRE 2025: Transform Your Business Through Technology',
-      location: 'Microsoft Technology Center, 11 Times Square, 6th Floor, New York, NY 10036',
+      location: 'Microsoft Conference Center, 11 Times Square, 6th Floor, New York, NY 10036',
       details: 'Join us for an inspiring day of innovation, strategy, and networking.',
       startDate: '20251015T130000Z', // October 15, 2025, 9:00 AM EST (13:00 UTC)
       endDate: '20251015T210000Z'    // October 15, 2025, 5:00 PM EST (21:00 UTC)
@@ -316,7 +316,7 @@ const Register = () => {
                   <MapPin className="w-5 h-5 text-purple-600" />
                   <div>
                     <p className="font-medium text-gray-900">Location</p>
-                    <p className="text-gray-600">Microsoft Technology Center, Times Square, NYC</p>
+                    <p className="text-gray-600">Microsoft Conference Center, Times Square, NYC</p>
                   </div>
                 </div>
               </div>

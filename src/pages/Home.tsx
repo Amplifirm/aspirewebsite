@@ -333,7 +333,7 @@ const HomePage = () => {
                 <p className="text-xl text-gray-700 leading-relaxed font-roboto">
                   One-day conference for SMB leaders featuring <strong>24 expert sessions</strong> across 
                   <strong> four strategic tracks</strong>. Join <strong>150+ business executives</strong> at 
-                  Microsoft Technology Center, NYC.
+                  Microsoft Conference Center, NYC.
                 </p>
               </div>
 
@@ -399,7 +399,7 @@ const HomePage = () => {
                 <div className="flex items-center space-x-3 p-3 bg-gray-100 rounded-xl animate-fadeInUp delay-200">
                   <MapPin className="w-5 h-5" style={{color: '#2EA1ED'}} />
                   <div>
-                    <div className="font-bold text-gray-900 font-roboto">Microsoft Technology Center</div>
+                    <div className="font-bold text-gray-900 font-roboto">Microsoft Conference Center</div>
                     <div className="text-gray-600 text-sm font-roboto">Times Square, NYC</div>
                   </div>
                 </div>
@@ -622,7 +622,7 @@ const HomePage = () => {
             </h2>
             <p className="text-xl text-gray-700 mb-12 font-roboto">
               Join 150+ business leaders for a day of learning, networking, and growth 
-              at Microsoft Technology Center.
+              at Microsoft Conference Center.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">

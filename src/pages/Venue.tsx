@@ -76,7 +76,7 @@ const VenuePage = () => {
             <div className="space-y-8">
               <div>
                 <h1 className="text-5xl sm:text-6xl font-light text-gray-900 mb-6 tracking-tight">
-                  Microsoft Technology Center
+                  Microsoft Conference Center
                 </h1>
                 <p className="text-xl text-gray-600 mb-8 leading-relaxed">
                   Join us in the heart of <strong>Times Square, NYC</strong> at Microsoft's flagship 
@@ -92,7 +92,7 @@ const VenuePage = () => {
                   <div>
                     <h3 className="font-bold text-gray-900 mb-2">Venue Address</h3>
                     <p className="text-gray-700 mb-2">
-                      Microsoft Technology Center<br/>
+                      Microsoft Conference Center<br/>
                       11 Times Square, 6th Floor<br/>
                       New York, NY 10036
                     </p>
@@ -159,7 +159,7 @@ const VenuePage = () => {
                     frameBorder="0" 
                     scrolling="no" 
                     allowFullScreen 
-                    title="Microsoft Technology Center Location"
+                    title="Microsoft Conference Center Location"
                     className="w-full h-full"
                   />
                 </div>
@@ -246,7 +246,7 @@ const VenuePage = () => {
               Transportation Options
             </h2>
             <p className="text-xl text-gray-600">
-              Multiple convenient ways to reach Microsoft Technology Center in Times Square
+              Multiple convenient ways to reach Microsoft Conference Center in Times Square
             </p>
           </div>
 
@@ -278,7 +278,7 @@ const VenuePage = () => {
               Ready to Experience Innovation?
             </h2>
             <p className="text-xl text-gray-700 mb-12">
-              Join us at Microsoft Technology Center for a day of learning, networking, 
+              Join us at Microsoft Conference Center for a day of learning, networking, 
               and transformation in the heart of New York City.
             </p>
             

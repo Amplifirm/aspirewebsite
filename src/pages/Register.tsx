@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { CheckCircle, Calendar, MapPin, Clock } from 'lucide-react';
-import { authService } from '../lib/supabase';
+import { authService } from '../lib/sheetdb';
 
 interface FormData {
   firstName: string;

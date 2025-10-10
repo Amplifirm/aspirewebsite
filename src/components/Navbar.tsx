@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Menu, X, User, LogOut, LogIn, UserPlus, Calendar } from 'lucide-react';
 
+
+
 // Define the User type
 interface UserType {
   id: string;

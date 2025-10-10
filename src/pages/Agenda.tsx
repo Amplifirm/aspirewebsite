@@ -4,7 +4,7 @@ import {
   Clock, TrendingUp, DollarSign, Zap, Shield, Users, X, Calendar, MapPin, 
   Coffee, CheckCircle 
 } from 'lucide-react';
-import { authService } from '../lib/supabase';
+import { authService } from '../lib/sheetdb';
 
 // Type definitions
 interface UserType {

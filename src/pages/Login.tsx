@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { authService } from '../lib/supabase';
+import { authService } from '../lib/sheetdb';
 
 const Login: React.FC = () => {
   const [email, setEmail] = useState<string>('');

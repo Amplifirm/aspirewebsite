@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { 
   User, Calendar, Clock, MapPin, TrendingUp, DollarSign, Zap, Shield, 
- CheckCircle, Plus, Trash2, Users, Coffee
+  CheckCircle, Plus, Trash2, Users, Coffee
 } from 'lucide-react';
-import { authService } from '../lib/supabase';
+import { authService } from '../lib/sheetdb';
 
 // Type definitions
 interface UserType {
@@ -68,18 +68,19 @@ const Dashboard = () => {
         const parsedUser: UserType = JSON.parse(userData);
         console.log('Loaded user from localStorage:', parsedUser);
         
-        // Get fresh data from database
+        // Get fresh data from SheetDB
         const result = await authService.getCurrentUser();
         
         if (result.success && result.user) {
-          console.log('Fresh user data from database:', result.user);
+          console.log('Fresh user data from SheetDB:', result.user);
+          console.log('Registered sessions:', result.user.registeredSessions);
           setUser(result.user);
           setRegisteredSessions(result.user.registeredSessions || []);
           
           // Update localStorage with fresh data
           localStorage.setItem('user', JSON.stringify(result.user));
         } else {
-          console.log('Failed to get current user, using localStorage data');
+          console.log('Failed to get current user from SheetDB, using localStorage data');
           // Fallback to localStorage data
           setUser(parsedUser);
           setRegisteredSessions(parsedUser.registeredSessions || []);
@@ -87,6 +88,14 @@ const Dashboard = () => {
       } catch (err) {
         console.error('Error loading user data:', err);
         setError('Failed to load user data');
+        
+        // Try to use localStorage as fallback
+        const userData = localStorage.getItem('user');
+        if (userData) {
+          const parsedUser: UserType = JSON.parse(userData);
+          setUser(parsedUser);
+          setRegisteredSessions(parsedUser.registeredSessions || []);
+        }
       } finally {
         setLoading(false);
       }
@@ -95,15 +104,17 @@ const Dashboard = () => {
     loadUserData();
   }, [navigate]);
 
- 
   const removeSession = async (sessionId: string): Promise<void> => {
     try {
       setLoading(true);
+      
+      console.log('Removing session:', sessionId);
       
       // Call the backend to remove the session
       const result = await authService.unregisterSession(sessionId);
       
       if (result.success) {
+        console.log('Session removed successfully, new sessions:', result.registeredSessions);
         // Update local state with fresh data from backend
         setRegisteredSessions(result.registeredSessions || []);
         
@@ -113,8 +124,6 @@ const Dashboard = () => {
           localStorage.setItem('user', JSON.stringify(updatedUser));
           setUser(updatedUser);
         }
-        
-        console.log('Session removed successfully:', sessionId);
       } else {
         setError(result.error || 'Failed to remove session');
       }
@@ -136,8 +145,16 @@ const Dashboard = () => {
       '3:00 PM - 3:50 PM'
     ];
 
+    console.log('Organizing sessions by time...');
+    console.log('Available sessions:', registeredSessions);
+    console.log('Time slots:', timeSlots);
+
     return timeSlots.map(time => {
-      const session = registeredSessions.find(s => s.time === time);
+      const session = registeredSessions.find(s => {
+        console.log(`Comparing: "${s.time}" === "${time}"`);
+        return s.time === time;
+      });
+      console.log(`Time ${time}: ${session ? 'Found session' : 'No session'}`);
       return { time, session };
     });
   };
@@ -154,8 +171,6 @@ const Dashboard = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white">
-      
-
       <div className="max-w-7xl mx-auto px-6 py-8 pt-24">
         {error && (
           <div className="bg-red-50 border border-red-200 rounded-xl p-4 mb-6">
@@ -168,6 +183,13 @@ const Dashboard = () => {
             </button>
           </div>
         )}
+
+        {/* Debug Info - Remove this after testing */}
+        <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 mb-6">
+          <p className="text-yellow-800 font-semibold mb-2">Debug Info:</p>
+          <p className="text-yellow-700 text-sm">Total registered sessions: {registeredSessions.length}</p>
+          <p className="text-yellow-700 text-sm">Sessions: {JSON.stringify(registeredSessions, null, 2)}</p>
+        </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Left Column - Profile & Event Info */}
@@ -223,8 +245,6 @@ const Dashboard = () => {
                     <div className="text-gray-600 text-sm">Times Square, NYC</div>
                   </div>
                 </div>
-                
-                
               </div>
             </div>
 
@@ -301,7 +321,7 @@ const Dashboard = () => {
                           <div>
                             <div className="font-medium text-gray-900">9:30 AM - 10:15 AM</div>
                             <div className="text-gray-700">KEYNOTE: Business Leadership Conversation</div>
-                            <div className="text-gray-600 text-sm">Jack Alexy &  Jennifer S. Mazzanti </div>
+                            <div className="text-gray-600 text-sm">Jack Alexy & Jennifer S. Mazzanti</div>
                           </div>
                         </div>
                         <CheckCircle className="w-5 h-5 text-purple-600" />
@@ -461,8 +481,6 @@ const Dashboard = () => {
                         <CheckCircle className="w-5 h-5 text-indigo-600" />
                       </div>
                     </div>
-
-                    
                   </div>
 
                   {/* Track Summary */}

@@ -184,13 +184,7 @@ const Dashboard = () => {
           </div>
         )}
 
-        {/* Debug Info - Remove this after testing */}
-        <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 mb-6">
-          <p className="text-yellow-800 font-semibold mb-2">Debug Info:</p>
-          <p className="text-yellow-700 text-sm">Total registered sessions: {registeredSessions.length}</p>
-          <p className="text-yellow-700 text-sm">Sessions: {JSON.stringify(registeredSessions, null, 2)}</p>
-        </div>
-
+       
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Left Column - Profile & Event Info */}
           <div className="space-y-6">
